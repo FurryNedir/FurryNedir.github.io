@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
+<html>
+	<head>
 		<title>What Are Furries?</title>
-		<meta charset="UTF-8">
- 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="description" content="What are furries? What do they actually DO? Is it a sex thing? Let's find out - with numbers!">
-		<meta property="og:url" content="index.html" />
+		<meta property="og:url" content="http://www.whatarefurries.com/" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="What Are Furries?" />
 		<meta property="og:description" content="What are furries? What do they actually DO? Is it a sex thing? Let's find out - with numbers!" />
-		<meta property="og:image" content="img/graph_preview.png" />
-		<meta property="og:image:url" content="img/graph_preview.png" />
+		<meta property="og:image" content="http://whatarefurries.com/img/graph_preview.png" />
+		<meta property="og:image:url" content="http://whatarefurries.com/img/graph_preview.png" />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@whatarefurries" />
 		<meta name="twitter:title" content="What Are Furries?" />
 		<meta name="twitter:description" content="What are furries? What do they actually DO? Is it a sex thing? Let's find out - with numbers!" />
-		<meta name="twitter:image" content="img/twitter_card.png" />
+		<meta name="twitter:image" content="http://whatarefurries.com/img/twitter_card.png" />
 		<style>
 			.content a {
 				color: #000000;
@@ -598,9 +593,9 @@
 			}
 		</style>
 		<script src="jquery-2.1.1.min.js" type="text/javascript"></script>
-		<link href="../fonts.googleapis.com/css809f.css?family=Roboto+Condensed" rel="stylesheet">
-		<link href="../fonts.googleapis.com/cssf7e1.css?family=Crimson+Text" rel="stylesheet">
-		<link href="../fonts.googleapis.com/cssbec6.css?family=Cutive+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
 	</head>
 	<body>
 		<script type="text/javascript">
@@ -680,7 +675,7 @@
 					$(this).removeClass("unloadedBarGraphBar");
 				});
 				$(".popularityCircle").each(function() {
-					var nameParts = $(this).attr("src").split("index.html");
+					var nameParts = $(this).attr("src").split("/");
 					var name = nameParts[nameParts.length-1].split(".png")[0];
 					var desiredArea = 100 * (furryStats[name].split("%")[0]);
 					var radius;
@@ -734,9 +729,8 @@
 			<div class="anchorContainer"><a class="anchor" id="info">.</a></div>
 			<div style="display: block; height: 110px;"></div>
 			<div class="content">
-				<div class="definitionWord">fur<span style="font-family: sans-serif">·</span>ry</div><div class="definitionPOS">(noun)</div><div class="definitionText">a person who likes <a target="_blank" style="color: #777777" href="https://www.merriam-webster.com/dictionary/anthropomorphic">anthropomorphic</a> animals</div>
+				<div class="definitionWord">fur<span style="font-family: sans-serif">�</span>ry</div><div class="definitionPOS">(noun)</div><div class="definitionText">a person who likes <a target="_blank" style="color: #777777" href="https://www.merriam-webster.com/dictionary/anthropomorphic">anthropomorphic</a> animals</div>
 				<p>That is the most reliable, generic, <span style="font-style: italic">boring</span> answer someone could possibly give you, and while it's essentially true, it's not very helpful.</p>
-				<p>DAHA ÇEVİRİ AŞAMASINDADIR.</p>
 				<div class="colorBlock blue">
 					<img src="img/rainbow_divider.png">
 					<p>So what are furries, <span style="font-weight: bold">really</span>?</p>
@@ -768,9 +762,19 @@
 				<img src="img/awkward_strip.png">
 				<p>If you're here, it's probably because you've been a part of one of these conversations.</p>
 				<p>Maybe you're a furry looking for some way to explain yourself, or maybe you've never heard the word "furry" before, and you want to see what it's all about.</p>
+				<!--<div class="colorBlock blue">
+					<img src="img/rainbow_divider.png">
+					<p>To an outsider, furries often seem confusing and weird. It's a big community, and even furries have a hard time trying to explain it all.</p>
+					<p>But since you're here, why not dig in a little bit?</p>
+					<div style="display: block; height: 50px;"></div>
+					<p>If you were sent here by a furry, try asking what <a href="#types">type of furry</a> they are.</p>
+					<p>If you're a worried parent, take a look at the <a href="#sex">"Is it a sex thing?"</a> section, so you can learn what's going on, and what to watch out for.</p>
+					<p>And if you're here because you're a furry, please <a href="https://goo.gl/forms/t7XkFHbZVAEWga6P2">take the survey</a> and <a href="mailto:feedback@whatarefurries.com">let us know</a> what you think about this page. Is it useful? Is it correct?</p>
+					<img src="img/rainbow_divider.png">
+				</div> -->
 				<div class="colorBlock blue">
 					<img src="img/rainbow_divider.png">
-					<p>In order to take a better look at furries, we've gathered some data from <span class="furrydata">"HATA: FURRYCOUNT"</span> furries around the world.</p>
+					<p>In order to take a better look at furries, we've gathered some data from <span class="furrydata">Furry count</span> furries around the world.</p>
 					<p>The data on this page is updated in <span class="loadedData">real time</span>, based on the results of our survey.</p>
 					<div class="statsNote">
 						<p><span style="font-weight: bold">Important Reminder:</span> The numbers reported here are only representative of a small fraction of the furry community. Furries with <span style="font-weight: bold">strong opinions</span> and a high level of involvement within the community are more likely to participate in surveys, while "casual furries" are less likely to participate in surveys.</p>
@@ -787,7 +791,7 @@
 				<div class="popularityMeter">
 					<img class="popularityCircle" src="img/typecircles/fantasy.png">
 					<img class="popularityCircle" src="img/typecircles/socializer.png">
-					<img class="popularityCircle" src="img/typecircles/animal%20lover.png">
+					<img class="popularityCircle" src="img/typecircles/animal lover.png">
 					<img class="popularityCircle" src="img/typecircles/escapist.png">
 					<img class="popularityCircle" src="img/typecircles/connoisseur.png">
 					<img class="popularityCircle" src="img/typecircles/reinventor.png">
@@ -823,7 +827,7 @@
 				<div class="furryType" style="background-image: url('img/typebadges/socializer.png');">
 					<p><span class="furrydata">socializer</span> of surveyed furries use the furry community as a place to meet new friends and socialize.</p>
 				</div>
-				<div class="furryType" style="background-image: url('img/typebadges/animal%20lover.png');">
+				<div class="furryType" style="background-image: url('img/typebadges/animal lover.png');">
 					<p><span class="furrydata">animal lover</span> of surveyed furries say that they love animals, and enjoy looking at the animal artwork that furries produce.</p>
 				</div>
 				<div class="furryType" style="background-image: url('img/typebadges/escapist.png');">
@@ -869,7 +873,7 @@
 				<p>If there's one thing you should learn from this website, it's that <span style="font-weight: bold">not all furries are the same</span>. What one person enjoys, another person might find boring or weird.</p>
 				<div style="display: block; height: 40px;"></div>
 				<div class="anchorContainer"><a class="anchor" id="mainstreamMedia">.</a></div>
-				<div class="activityType" style="background-image: url('img/activities/mainstream%20media.png');">
+				<div class="activityType" style="background-image: url('img/activities/mainstream media.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
 					<h4>Enjoy mainstream media featuring anthropomorphic characters</h4>
 					<p><span class="furrydata">activity: mainstream media</span> of surveyed furries enjoy mainstream media featuring talking animals or anthropomorphic fantasy races.</p>
@@ -880,7 +884,7 @@
 					<p>Furries often start out as normal people who are just very big fans of animated shows and movies (Lion King, Zootopia, My Little Pony, etc.), video games with animal characters (Starfox, Sly Cooper, Sonic, etc.), or fantasy series with anthropomorphic races and characters. (Dungeons & Dragons, Redwall, Chronicles of Narnia, etc.)</p>
 				</div>
 				<div class="anchorContainer"><a class="anchor" id="furryMedia">.</a></div>
-				<div class="activityType" style="background-image: url('img/activities/furry%20media.png');">
+				<div class="activityType" style="background-image: url('img/activities/furry media.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
 					<h4>Browse furry artwork and media made by other furries</h4>
 					<p><span class="furrydata">activity: furry media</span> of surveyed furries use websites like <a href="http://www.furaffinity.net/">FurAffinity</a> to browse furry artwork, writing, and other media.</p>
@@ -888,9 +892,9 @@
 					<p>Once a person has discovered the furry community, the first thing they normally do is begin browsing the mountains of artwork, animation, and writing that are available online.</p>
 					<p>There are several websites dedicated to helping furries connect, talk about their interests, and share artwork/stories they've created. A few of the largest sites include:</p>
 					<ul>
-						<li><a target="_blank" href="https://www.furaffinity.net/">FurAffinity</a>: The largest furry site on the internet, focused on sharing art and stories. FurAffinity allows some adult content, but only for registered adult users.</li>
-						<li><a target="_blank" href="https://www.reddit.com/r/furry/">/r/furry/</a>: The "/r/furry/" community is part of <a href="https://www.reddit.com/">reddit</a>, a massive website where people can create community forums about <span style="font-style: italic;">any</span> topic or hobby. The /r/furry/ subreddit does not allow adult content, but artistic nudity is sometimes allowed, for registered adult users.</li>
-						<li><a target="_blank" href="https://www.deviantart.com/">DeviantArt</a>: This art-sharing website is not specifically for furries, but for artists in general. It does have a large furry presence, however, and many furry artists prefer DeviantArt over FurAffinity because of its cleaner reputation and strict policy against pornographic content.</li>
+						<li><a target="_blank" href="http://www.furaffinity.net/">FurAffinity</a>: The largest furry site on the internet, focused on sharing art and stories. FurAffinity allows some adult content, but only for registered adult users.</li>
+						<li><a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a>: The "/r/furry/" community is part of <a href="http://www.reddit.com">reddit</a>, a massive website where people can create community forums about <span style="font-style: italic;">any</span> topic or hobby. The /r/furry/ subreddit does not allow adult content, but artistic nudity is sometimes allowed, for registered adult users.</li>
+						<li><a target="_blank" href="http://www.deviantart.com/">DeviantArt</a>: This art-sharing website is not specifically for furries, but for artists in general. It does have a large furry presence, however, and many furry artists prefer DeviantArt over FurAffinity because of its cleaner reputation and strict policy against pornographic content.</li>
 					</ul>
 					<p></p>
 				</div>
@@ -941,7 +945,7 @@
 					<p>Like most entertainment and luxury industries, the furry artwork industry is one where a small minority of users spends a disproportionately high amount of money. These furries often become popular simply because of the sheer volume or quality of art they've commissioned, as their characters become recognized as sort of a "furry celebrity." (occasionally called a "popufur")</p>
 				</div>
 				<div class="anchorContainer"><a class="anchor" id="hangouts">.</a></div>
-				<div class="activityType" style="background-image: url('img/activities/local%20meetup.png');">
+				<div class="activityType" style="background-image: url('img/activities/local meetup.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
 					<h4>Go to local hangouts with other furries</h4>
 					<p><span class="furrydata">activity: local meetup</span> of surveyed furries have gone to a small, local meetup with other furries.</p>
@@ -969,7 +973,7 @@
 				<div style="display: block; height: 25px;"></div>
 				</div>
 				<div class="anchorContainer"><a class="anchor" id="fursuit">.</a></div>
-				<div class="activityType" style="background-image: url('img/activities/worn%20fursuit.png');">
+				<div class="activityType" style="background-image: url('img/activities/worn fursuit.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
 					<h4>Fursuit</h4>
 					<p>Fursuits are one of the first things people think of when they think about furries, despite the fact that only <span class="furrydata">activity: worn fursuit</span> of surveyed furries have worn a fursuit, and only <span class="furrydata">activity: owned fursuit</span> actually own one.</p>
@@ -1028,7 +1032,7 @@
 					</ul>
 				</div>
 				<div class="anchorContainer"><a class="anchor" id="adultActivities">.</a></div>
-				<div class="activityType" style="background-image: url('img/activities/viewed%20adult%20content.png');">
+				<div class="activityType" style="background-image: url('img/activities/viewed adult content.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
 					<h4>Adult things</h4>
 					<p><span class="furrydata">activity: viewed adult content</span> of surveyed furries look at adult furry content.</p>
@@ -1150,61 +1154,12 @@
 				<h1>FAQ</h1>
 				<div style="display: block; height: 50px;"></div>
 				<div class="faqColumn" id="FAQ0">
-					<div class="section">
-						<div class="faqText">
-							<h2>What's up with the costumes?</h2>
-						<p>Fursuits are just one small part of the furry community, and only about <span class="furrydata unloadedData">activity: owned fursuit</span> of furries own one.</p>
-						<p>Furries who fursuit do it for <a href="#fursuit">a variety of reasons</a>, but most of those reasons are just about letting loose, having fun, and making people happy.</p>
-						</div>
-					</div>
-				<div class="section">
-					<div class="faqText">
-						<h2>Do furries think that they're animals?</h2>
-					<p>Only about <span class="furrydata unloadedData">otherkin</span> of furries are <a target="_blank" href="https://en.wikipedia.org/wiki/Therianthropy#Psychiatric_aspects">therians</a> or <a target="_blank" href="https://en.wikipedia.org/wiki/Otherkin">otherkin</a>: people who believe they are an animal "trapped" in a human body.</p>
-					</div>
-					</div>
-					<div class="section">
-						<div class="faqText"><h2>I know someone who likes animated movies / animal races in video games. Are they a furry?</h2>
-						<p>Probably not, but maybe!</p>
-						<p>In the same way that it's possible to enjoy Star Trek without being a "trekkie," there are a lot of people who enjoy animated movies and animal races, but don't consider themselves furries.</p>
-						</div>
-					</div>
 				</div>
 				<div class="faqColumn" id="FAQ1">
-					<div class="section">
-						<div class="faqText">
-							<h2>Why does it seem like many furries are gay?</h2>
-						<p>The furry community is one that prides itself on being open, inviting, and accepting.</p>
-						<p>Because of this, many LGBT people who feel out of place in the mainstream world see the furry community as a safe place - somewhere that allows them to be who they really are.</p>
-						<p>In many instances, this feeling of security and acceptance causes people to form a strong, positive association between the furry community and their sexuality.</p>
-						</div>
-						</div>
-						<div class="section">
-							<div class="faqText"><h2>Who made this site, and what's your angle?</h2>
-							<p>Howdy! I'm a furry from the Midwest who makes furry content for a living.</p>
-							<p>I made this site because when you google "what are furries?", the top results are a boring wikipedia page and a bunch of sensationalist news articles. I wanted to change that.</p>
-							<p>For most furries, being a furry is a private, silly thing, not a big part of their identity. But some furries feel the need to "come out" as furries, and others are "outed" accidentally. I wanted to make a resource that those people could use to try to explain the whole "furry" thing to others.</p>
-							</div>
-				</div>
 				</div>
 				<div class="faqColumn" id="FAQ2">
-					<div class="section">
-						<div class="faqText"><h2>Are furries zoophiles?</h2>
-						<p>No. Zoophilia is completely unrelated to the furry community.</p>
-						<p>One of the core characteristics of the furry community - including the adult portion of the community - is an appreciation for animals who are <span style="font-weight: bold">anthropomorphized</span>, which means they can think, speak, consent, and <span style="font-style: italic">look</span> like humans.</p>
-						<p>Real animals are not capable of thought, speech, or consent on the same level as humans. More importantly, real animals do not look human in any way, so they are not sexually attractive to most furries.</p>
-						</div>
-						</div>
-						<div class="section">
-							<div class="faqText"><h2>How was this data collected?</h2>
-							<p>The surveys used to build this website were posted on several online furry communities, by fairly prominent members of those communities. The surveys can also be taken by anyone who visits this page.</p>
-							<p>Most of the survey responses come from <a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a>, a furry community with about 34,000 members.</p>
-							<p>The remaining survey responses were collected on furry art websites like <a target="_blank" href="http://www.furaffinity.net/">FurAffinity</a>. Because these websites often allow adult art, the survey results may be slightly skewed in favor of sex-positive answers.</p>
-							<p>It's important to remember that, like any other survey, the numbers shown on this website only represent a small portion of the furry community. Furries with strong opinions and a high degree of activity within the community are more likely to take voluntary surveys.</p>
-							</div>
 				</div>
 				<div style="display: block; height: 50px;"></div>
-				</div>
 			</div>
 			<div class="anchorContainer"><a class="anchor" id="surveys">.</a></div>
 			<div class="content">
@@ -1220,11 +1175,9 @@
 				<div style="display: block; height: 50px;"></div>
 			</div>
 			<div class="legalFooter">
-				This website and its contents are copyright ©2017 Fek @ PO Box 11545, 46201. The trademarks used throughout this site belong to their respective owners.
+				This website and its contents are copyright �2017 Fek @ PO Box 11545, 46201. The trademarks used throughout this site belong to their respective owners.
 			</div>
-			
+			<!-- <img class="constructionNotice" src="img/construction_notice.png"> -->
 		</div>
 	</body>
-
-<!-- Mirrored from whatarefurries.com/ by HTTraQt Website Copier/1.x [Karbofos 2012-2017] Fri, 25 Nov 2022 16:58:53 GMT -->
 </html>
