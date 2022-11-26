@@ -682,15 +682,7 @@
 						$(this).css("width",(35 * furryStats[$(this).html()])+"%").html("");
 					}
 					$(this).removeClass("unloadedBarGraphBar");
-				});
-				$(".popularityCircle").each(function() {
-					var nameParts = $(this).attr("src").split("/");
-					var name = nameParts[nameParts.length-1].split(".png")[0];
-					var desiredArea = 100 * (furryStats[name].split("%")[0]);
-					var radius;
-					radius = Math.sqrt(desiredArea / 3.1415);
-					$(this).css("width", Math.round(radius*2)+"px");
-					$(this).css("top",(Math.round(radius*2)/2-60)+"px");
+				<!-- add back here -->
 				});
 				$("#littleFurry_sex").html("");
 				$(".sexAnswerFurryBox").html("");
@@ -797,7 +789,7 @@
 			<div class="content">
 				<h1>Types of furries</h1>
 				<div style="display: block; height: 50px;"></div>
-				<div class="popularityMeter" style="width: 75px; top: -5px;">
+				<div class="popularityMeter">
 					<img class="popularityCircle" src="img/typecircles/fantasy.png" style="width: 75px; top: -5px;">
 					<img class="popularityCircle" src="img/typecircles/socializer.png" style="width: 75px; top: -5px;">
 					<img class="popularityCircle" src="img/typecircles/animal lover.png" style="width: 75px; top: -5px;">
