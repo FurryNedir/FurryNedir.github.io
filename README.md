@@ -5,7 +5,7 @@ We only translated this site, all the work is belongs to the original maker. Unf
 
 ## Projede katkıda bulunanlar:
 ##### ~Bilinmiyor~ (Komple Site Tasarımı, Site Kodlanması, vs.)
-##### 1- Kekstogo (Baştan Sonra Bir Temel Üzerine Site Tasarımı, Sitedeki Eksiklikler, Çeviri)
+##### 1- Kekstogo (Sitedeki Bazı Yerlerin Yeniden Tasarımı, Sitedeki Eksiklikler, Sitedeki Hatalar, Çeviri, vs.)
 ##### 2- Darkbloodking (Çeviri)
 ##### 3- Guro (Çeviri)
 
