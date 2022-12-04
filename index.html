@@ -17,570 +17,566 @@
 		<meta name="twitter:title" content="Furryler Nedir?" />
 		<meta name="twitter:description" content="Furryler Nedir? Aslında Ne Yaparlar? Cinsel Birşey mi? Rakamlarla Bulalım!" />
 		<meta name="twitter:image" content="https://raw.githubusercontent.com/FurryNedir/FurryNedir.github.io/main/img/twitter_card.png" />
+
 		<style>
-			.content a {
-				color: #3c3c3c;
-				text-decoration: underline;
-				font-weight: bold;
-				padding-left: 1px;
-				padding-right: 1px;
-			}
-			
-			.content a:hover {
-				background-color: #ffffff00;
-				color: #252525;
-				border-radius: 4px;
-			}
-			
-			.constructionNotice {
-				position: fixed;
-				right: 0px;
-				top: 0px;
-				pointer-events: none;
-				width: auto;
-				z-index: 99;
-			}
-			
-			body {
-				font-family: 'Roboto Condensed', sans-serif;
-				background: url('img/bg.png') #cccccc;
-				margin: 0px;
-				padding: 0px;
-				color: #333333;
-				overflow-x: hidden;
-				overflow-y: scroll;
-			}
-			
-			.button {
-				width: 300px;
-				height: 40px;
-				font-size: 20px;
-				font-weight: bold;
-				text-align: center;
-				padding-top: 20px;
-				border: 1px solid black;
-				cursor: pointer;
-				display: inline-block;
-				margin: 10px;
-				border-radius: 10px;
-				text-transform: uppercase;
-			}
-			
-			.navBar {
-				font-weight: bold;
-				position: fixed;
-				height: 60px;
-				background: #ffffff00;
-				text-align: left;
-				z-index: 5;
-			}
-			
-			.navBarRightSegment {
-				position: absolute;
-				text-align: right;
-				width: 50%;
-				left: 50%;
-			}
-			
-			.navButton {
-				background-color: #b5ccf9;
-				border-radius: 127px;
-				border-style: dashed;
-				display: inline-block;
-				text-transform: uppercase;
-				height: 25px;
-				padding: 20px;
-				color: #273e6a;
-				margin-top: 15px;
-				margin-bottom: -10px;
-			}
-			
-			.surveyButton {
-				display: block;
-				background-color: #d2e38c;
-				color: #41452f;
-				font-size: 30px;
-				padding: 20px;
-				border-radius: 10px;
-				margin: 5px;
-				margin-left: 50px;
-				margin-right: 50px;
-				-moz-box-shadow: 0 0 15px #bdbfd9;
-				-webkit-box-shadow: 0 0 15px #bdbfd9;
-				box-shadow: 0px 0px 15px #bdbfd9;
-			}
-			
-			.surveyButton:hover {
-				background-color: #e7f1c0;
-			}
-			
-			.bigSurveyButton {
-				font-size: 60px;
-			}
-			
-			.navButtonEmphasis {
-				background-color: #d2e38c;
-			}
-			
-			.navbarLogo {
-				position: absolute;
-				left: calc(50% - 60px);
-				top: calc(50% - 30px);
-				width: 120px;
-			}
-			
-			.littleNavTex {
-				font-size: 11px;
-			}
-			
-			.legalFooter {
-				width: 100%;
-				color: #999999;
-				font-size: 10px;
-				text-align: center;
-				margin: 20px;
-			}
-			
-			.contentContainer {
-				width: 100%;
-				text-align: center;
-			}
-			
-			.content {
-				width: calc(100% - 100px);
-				max-width: 1200px;
-				background: #ffffff;
-				margin: auto;
-				text-align: center;
-				border-radius: 15px 15px 15px 15px;
-				color: #555555;
-				padding-bottom: 1px;
-				-moz-box-shadow: 0 0 35px #bdbfd9;
-				-webkit-box-shadow: 0 0 35px #bdbfd9;
-				box-shadow: 0px 0px 35px #bdbfd9;
-			}
-			
-			h1 {
-				font-size: 60px;
-				width: calc(100% + 30px);
-				background-color: #a2bff9;
-				margin: 0px;
-				margin-left: -15px;
-				margin-bottom: -7px;
-				color: white;
-				text-transform: uppercase;
-				padding: 0px;
-				margin-top: 46px;
-				-moz-box-shadow: 0 0 35px #bdbfd9;
-				-webkit-box-shadow: 0 0 35px #bdbfd9;
-				box-shadow: 0px 0px 35px #bdbfd9;
-				border-radius: 5px;
-			}
-			
-			h3 {
-				font-size: 16px;
-				width: calc(100% + 30px);
-				background-color: #a2bff9;
-				margin: 0px;
-				margin-left: -15px;
-				color: white;
-				text-transform: uppercase;
-				padding: 0px;
-				padding-bottom: 10px;
-				margin-bottom: 20px;
-			}
-			
-			.firstSection {
-				font-size: 16px;
-				margin-bottom: 12px;
-			}
-			
-			.faqColumn {
-				display: inline-block;
-				width: 390px;
-				margin: 0px;
-				padding: 0px;
-				margin-bottom: -6px;
-				vertical-align: top;
-			}
-			
-			.loadingIndicator {
-				height: 100px;
-			}
-			
-			.sectionColumn {
-				display: inline-block;
-				width: 590px;
-				margin: 0px;
-				padding: 0px;
-				margin-bottom: -6px;
-				vertical-align: top;
-			}
-			
-			.section {
-				background-color: #dddddd;
-				padding: 8px;
-				border-radius: 4px;
-				font-size: 12px;
-				margin: 6px;
-				text-align: left;
-				margin-bottom: 16px;
-			}
-			
-			.supportSection {
-				background-color: #d2e38c;
-				padding: 8px;
-				border-radius: 9px;
-				font-size: 12px;
-				margin: 6px;
-				text-align: center;
-				margin-bottom: 16px;
-			}
-			
-			.supportSection:hover {
-				background-color: #f9ab6e;
-			}
-			
-			h2 {
-				background-color: #a2bff9;
-				color: #ffffff;
-				padding: 4px;
-				width: calc(100% + 8px);
-				margin-top: -8px;
-				margin-left: -8px;
-				border-radius: 4px;
-				border-bottom-style: groove;
-				border-bottom-color: #00000024;
-			}
-			
-			.patchnotes h2 {
-				margin-bottom: 0px;
-			}
-			
-			.anchor {
-				position: relative;
-				top: -100px;
-				font-size: 1px;
-			}
-			
-			h4 {
-				font-size: 30px;
-				margin: 5px;
-			}
-			
-			h5 {
-				font-size: 10px;
-				background-color: #d2e38c;
-				border-radius: 4px;
-				padding: 4px;
-				text-transform: uppercase;
-				margin: 5px;
-			}
-			
-			.supportSection .sectionText {
-				text-align: center;
-			}
-			
-			.supportExplanation {
-				padding: 45px;
-				padding-top: 0px;
-				font-size: 16px;
-				color: #3a2c22;
-			}
-			
-			.content p {
-				display: inline-block;
-				width: 75%;
-				font-size: 36px;
-				margin: 15px;
-				text-align: left;
-			}
-			
-			.definitionWord {
-				font-size: 120px;
-				font-family: 'Crimson Text', serif;
-				display: inline;
-				color: #444444;
-			}
-			
-			.definitionPOS {
-				font-size: 40px;
-				font-family: 'Crimson Text', serif;
-				display: inline;
-				color: #777777;
-			}
-			
-			.definitionText {
-				font-size: 30px;
-				font-family: 'Crimson Text', serif;
-				margin-top: -20px;
-				margin-bottom: 40px;
-				color: #777777;
-			}
-			
-			.colorBlock {
-				width: 100%;
-				margin-top: 65px;
-				margin-bottom: 10px;
-				-moz-box-shadow: 0 0 15px #bdbfd9;
-				-webkit-box-shadow: 0 0 15px #bdbfd9;
-				box-shadow: 0px 0px 15px #bdbfd9;
-			}
-			
-			.colorBlock.blue {
-				background-color: #a2bff9;
-				color: #273e6a;
-			}
-			
-			.colorBlock img:first-child {
-				margin-bottom: 1px;
-			}
-			
-			.colorBlock.red {
-				background-color: #f9b0a2;
-				color: #6a3527;
-			}
-			
-			img {
-				width: 100%;
-				margin: 0px;
-			}
-			
-			.unloadedData{
-				background-color: #ffffff00;
-				padding: auto;
-				padding-left: 5;
-				padding-right: 5;
-				padding-top: 5;
-				padding-bottom: 5;
-			}
-			
-			.loadedData {
-				font-weight: bold;
-				background-color: #d2e38c;
-				padding: 0px;
-				padding-left: 4px;
-				padding-right: 4px;
-				padding-top: 0px;
-   				padding-bottom: 0px;
-				border-radius: 5px;
-			}
-			
-			ul {
-				width: 70%;
-				text-align: left;
-				margin-left: 12%;
-			}
-			
-			li {
-				margin-bottom: 3px;
-				font-size: 22px;
-			}
-			
-			.activityType {
-				width: calc(95%-280px);
-				background: #EEEEEE;
-				text-align: left;
-				display: inline-block;
-				margin: 5px;
-				border-radius: 10px;
-				overflow: hidden;
-				vertical-align: text-top;
-				min-height: 276px;
-				background-repeat: no-repeat;
-				padding-left: 280px;
-				padding-bottom: 25px;
-				margin-bottom: 5px;
-				-moz-box-shadow: 0 0 15px #bdbfd9;
-				-webkit-box-shadow: 0 0 15px #bdbfd9;
-				box-shadow: 0px 0px 15px #bdbfd9;
-			}
-			
-			.activityType p {
-				font-size: 17px;
-				width: auto;
-				margin: 5px;
-			}
-			
-			.activityType p:first-child {
-				font-size: 18px;
-				font-weight: bold;
-			}
-			
-			.furryType {
-				width: 35%;
-				background: #EEEEEE;
-				text-align: left;
-				display: inline-block;
-				margin: 5px;
-				border-radius: 10px;
-				overflow: hidden;
-				vertical-align: text-top;
-				min-height: 115px;
-				background-repeat: no-repeat;
-				padding-left: 140px;
-				background-size: 138px 256px;
-				margin-bottom: 25px;
-				-moz-box-shadow: 0 0 15px #bdbfd9;
-				-webkit-box-shadow: 0 0 15px #bdbfd9;
-				box-shadow: 0px 0px 15px #bdbfd9;
-			}
-			
-			.furryTypeImage {
-				position: relative;
-				left: 0px;
-				top: 0px;
-				width: 276px;
-				height: 211px;
-			}
-			
-			.furryType p {
-				font-size: 18px;
-				font-weight: bold;
-				margin: 5px;
-			}
-			
-			.popularityCircle {
-				width: 75px;
-				top: -5;
-				position: relative;
-			}
-			
-			.furrydata {
-				display: inline-block;
-			}
-			
-			.totaldata {
-				display: inline-block;
-			}
-			
-			.loadingDataGIF {
-				width: 20px;
-				height: 20px;
-			}
-			
-			.statsNote {
-				background: #fffc8d;
-			}
-			
-			.statsNote p {
-				font-size: 15px;
-				margin-bottom: 10px;
-			}
-			
-			.activityType ul {
-				margin: 0px;
-				width: auto;
-			}
-			
-			.activityType li {
-				font-size: 16px;
-				margin-top: 7px;
-			}
-			
-			.noUnderline {
-				text-decoration: none !important;
-			}
-			
-			.barGraphLabel {
-				display: inline-block;
-				width: 45%;
-				text-align: right;
-				font-size: 17px;
-				font-weight: bold;
-			}
-			
-			.barGraphBar {
-				color: #d2e38c;
-				background-color: #d2e38c;
-				display: inline-block;
-				height: 14px;
-				border-radius: 3px;
-				border: 1px solid #41452f;
-				margin-left: 6px;
-			}
-			
-			.barGraphLine {
-				margin-top: 10px;
-			}
-			
-			.barGraphBlue {
-				text-align: left;
-				padding-bottom: 30px;
-				width: 100%;
-				margin-left: 10%;
-			}
-			
-			.barGraph {
-				margin-bottom: 30px;
-			}
-			
-			.barGraphBarBlue {
-				color: #d2e38c;
-				background-color: #d2e38c;
-				display: inline-block;
-				height: 14px;
-				border-radius: 3px;
-				border: 1px solid #41452f;
-				margin-left: 6px;
-			}
-			
-			.rainbowTop {
-				position: relative;
-				left: -24px;
-				width: 110%;
-				height: 4px;
-			}
-			
-			.sexAnswer {
-				display: inline-block;
-				width: 25%;
-				background: white;
-				color: #555555;
-				border: 1px solid #555555;
-				border-radius: 20px;
-				padding: 15px;
-				font-size: 40px;
-				margin: 5px;
-				margin-top: 15px;
-			}
-			
-			.sexAnswerFurryBox {
-				display: inline-block;
-				width: 25%;
-				padding: 15px;
-				margin: 5px;
-			}
-			
-			.littleFurry {
-				width: auto;
-				margin-left: -3px;
-				margin-right: -3px;
-				margin-bottom: -30px;
-			}
-			
-			.sexReasons p {
-				font-size: 21px;
-				width: auto;
-				margin: 8px;
-			}
-			
-			.faqText p {
-				font-size: 16px;
-				width: 90%;
-				margin: auto;
-				margin-bottom: 5px;
-			}
-			
-			.section {
-				background: #EEEEEE;
-				-moz-box-shadow: 0 0 15px #bdbfd9;
-				-webkit-box-shadow: 0 0 15px #bdbfd9;
-				box-shadow: 0px 0px 15px #bdbfd9;
-			}
+		.anchor {
+			position: relative;
+			top: -100px;
+			font-size: 1px;
+		}
+
+		.activityType {
+			width: calc(95%-280px);
+			background: #EEEEEE;
+			text-align: left;
+			display: inline-block;
+			margin: 5px;
+			border-radius: 10px;
+			overflow: hidden;
+			vertical-align: text-top;
+			min-height: 276px;
+			background-repeat: no-repeat;
+			padding-left: 280px;
+			padding-bottom: 25px;
+			margin-bottom: 5px;
+			-moz-box-shadow: 0 0 15px #bdbfd9;
+			-webkit-box-shadow: 0 0 15px #bdbfd9;
+			box-shadow: 0px 0px 15px #bdbfd9;
+		}
+
+		.activityType p {
+			font-size: 17px;
+			width: auto;
+			margin: 5px;
+		}
+
+		.activityType p:first-child {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.activityType ul {
+			margin: 0px;
+			width: auto;
+		}
+
+		.activityType li {
+			font-size: 16px;
+			margin-top: 7px;
+		}
+
+		.barGraphLabel {
+			display: inline-block;
+			width: 45%;
+			text-align: right;
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		.barGraphBar {
+			color: #d2e38c;
+			background-color: #d2e38c;
+			display: inline-block;
+			height: 14px;
+			border-radius: 3px;
+			border: 1px solid #41452f;
+			margin-left: 6px;
+		}
+
+		.barGraphLine {
+			margin-top: 10px;
+		}
+
+		.barGraphBlue {
+			text-align: left;
+			padding-bottom: 30px;
+			width: 100%;
+			margin-left: 10%;
+		}
+
+		.barGraph {
+			margin-bottom: 30px;
+		}
+
+		.barGraphBarBlue {
+			color: #d2e38c;
+			background-color: #d2e38c;
+			display: inline-block;
+			height: 14px;
+			border-radius: 3px;
+			border: 1px solid #41452f;
+			margin-left: 6px;
+		}
+
+
+		.button {
+			width: 300px;
+			height: 40px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 20px;
+			border: 1px solid black;
+			cursor: pointer;
+			display: inline-block;
+			margin: 10px;
+			border-radius: 10px;
+			text-transform: uppercase;
+		}
+
+		.content {
+			width: calc(100% - 100px);
+			max-width: 1200px;
+			background: #ffffff;
+			margin: auto;
+			text-align: center;
+			border-radius: 15px 15px 15px 15px;
+			color: #555555;
+			padding-bottom: 1px;
+			-moz-box-shadow: 0 0 35px #bdbfd9;
+			-webkit-box-shadow: 0 0 35px #bdbfd9;
+			box-shadow: 0px 0px 35px #bdbfd9;
+		}
+
+		.content a {
+			color: #3c3c3c;
+			font-weight: bold;
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+
+		.content a:hover {
+			background-color: #ffffff00;
+			color: #252525;
+			border-radius: 4px;
+		}
+
+		.content p {
+			display: inline-block;
+			width: 75%;
+			font-size: 36px;
+			margin: 15px;
+			text-align: left;
+		}
+
+		.colorBlock {
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			-moz-box-shadow: 0 0 15px #bdbfd9;
+			-webkit-box-shadow: 0 0 15px #bdbfd9;
+			box-shadow: 0px 0px 15px #bdbfd9;
+		}
+
+		.colorBlock.blue {
+			background-color: #a2bff9;
+			color: #273e6a;
+		}
+
+		.colorBlock img:first-child {
+			margin-bottom: 1px;
+		}
+
+		.colorBlock.red {
+			background-color: #f9b0a2;
+			color: #6a3527;
+		}
+
+		.contentContainer {
+			width: 100%;
+			text-align: center;
+		}
+
+		.constructionNotice {
+			position: fixed;
+			right: 0px;
+			top: 0px;
+			pointer-events: none;
+			width: auto;
+			z-index: 99;
+		}
+
+		.definitionWord {
+			font-size: 120px;
+			font-family: 'Crimson Text', serif;
+			display: inline;
+			color: #444444;
+		}
+
+		.definitionPOS {
+			font-size: 40px;
+			font-family: 'Crimson Text', serif;
+			display: inline;
+			color: #777777;
+		}
+
+		.definitionText {
+			font-size: 30px;
+			font-family: 'Crimson Text', serif;
+			margin-top: -20px;
+			margin-bottom: 40px;
+			color: #777777;
+		}
+		.navBar {
+			font-weight: bold;
+			position: fixed;
+			height: 60px;
+			background: #ffffff00;
+			text-align: left;
+			z-index: 5;
+		}
+
+		.navBarRightSegment {
+			position: absolute;
+			text-align: right;
+			width: 50%;
+			left: 50%;
+		}
+
+		.navButton {
+			background-color: #b5ccf9;
+			border-radius: 127px;
+			border-style: dashed;
+			display: inline-block;
+			text-transform: uppercase;
+			height: 25px;
+			padding: 20px;
+			color: #273e6a;
+			margin-top: 15px;
+		}
+
+
+		.navButtonEmphasis {
+			background-color: #d2e38c;
+		}
+
+		.navbarLogo {
+			position: absolute;
+			left: calc(50% - 60px);
+			top: calc(50% - 30px);
+			width: 120px;
+		}
+
+		.littleNavTex {
+			font-size: 11px;
+		}
+
+		.legalFooter {
+			width: 100%;
+			color: #999999;
+			font-size: 10px;
+			text-align: center;
+			margin: 20px;
+		}
+
+		.loadingIndicator {
+			height: 100px;
+		}
+
+		.firstSection {
+			font-size: 16px;
+			margin-bottom: 12px;
+		}
+
+		.faqColumn {
+			display: inline-block;
+			width: 390px;
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: -6px;
+			vertical-align: top;
+		}
+
+		.supportSection:hover {
+			background-color: #f9ab6e;
+		}
+
+		body {
+			font-family: 'Roboto Condensed', sans-serif;
+			background: url('img/bg.png') #cccccc;
+			margin: 0px;
+			padding: 0px;
+			color: #333333;
+			overflow-x: hidden;
+			overflow-y: scroll;
+		}
+		h1 {
+			font-size: 60px;
+			width: calc(100% + 30px);
+			background-color: #a2bff9;
+			margin: 0px;
+			margin-left: -15px;
+			margin-bottom: -7px;
+			color: white;
+			text-transform: uppercase;
+			padding: 0px;
+			margin-top: 46px;
+			-moz-box-shadow: 0 0 35px #bdbfd9;
+			-webkit-box-shadow: 0 0 35px #bdbfd9;
+			box-shadow: 0px 0px 35px #bdbfd9;
+			border-radius: 5px;
+		}
+
+		h2 {
+			background-color: #a2bff9;
+			color: #ffffff;
+			padding: 4px;
+			width: calc(100% + 8px);
+			margin-top: -8px;
+			margin-left: -8px;
+			border-radius: 4px;
+			border-bottom-style: groove;
+			border-bottom-color: #00000024;
+		}
+		h3 {
+			font-size: 16px;
+			width: calc(100% + 30px);
+			background-color: #a2bff9;
+			margin: 0px;
+			margin-left: -15px;
+			color: white;
+			text-transform: uppercase;
+			padding: 0px;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+		}
+
+		h4 {
+			font-size: 30px;
+			margin: 5px;
+		}
+
+		h5 {
+			font-size: 10px;
+			background-color: #d2e38c;
+			border-radius: 4px;
+			padding: 4px;
+			text-transform: uppercase;
+			margin: 5px;
+		}
+
+		ul {
+			width: 70%;
+			text-align: left;
+			margin-left: 12%;
+		}
+
+		li {
+			margin-bottom: 3px;
+			font-size: 22px;
+		}
+
+		img {
+			width: 100%;
+			margin: 0px;
+		}
+		.patchnotes h2 {
+			margin-bottom: 0px;
+		}
+
+		.supportSection .sectionText {
+			text-align: center;
+		}
+
+		.supportExplanation {
+			padding: 45px;
+			padding-top: 0px;
+			font-size: 16px;
+			color: #3a2c22;
+		}
+
+		.unloadedData{
+			font-weight: bold;
+			background-color: #d2e38c;
+			padding: 0px;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			border-radius: 5px;
+		}
+
+		.loadedData {
+			font-weight: bold;
+			background-color: #d2e38c;
+			padding: 0px;
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			border-radius: 5px;
+		}
+
+		.furryType {
+			width: 35%;
+			background: #EEEEEE;
+			text-align: left;
+			display: inline-block;
+			margin: 5px;
+			border-radius: 10px;
+			overflow: hidden;
+			vertical-align: text-top;
+			min-height: 115px;
+			background-repeat: no-repeat;
+			padding-left: 140px;
+			background-size: 138px 256px;
+			margin-bottom: 25px;
+			-moz-box-shadow: 0 0 15px #bdbfd9;
+			-webkit-box-shadow: 0 0 15px #bdbfd9;
+			box-shadow: 0px 0px 15px #bdbfd9;
+		}
+
+		.furryTypeImage {
+			position: relative;
+			left: 0px;
+			top: 0px;
+			width: 276px;
+			height: 211px;
+		}
+
+		.furryType p {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 5px;
+		}
+
+		.popularityCircle {
+			width: 75px;
+			top: -5;
+			position: relative;
+		}
+
+		.furrydata {
+			display: inline-block;
+		}
+
+		.totaldata {
+			display: inline-block;
+		}
+
+		.loadingDataGIF {
+			width: 20px;
+			height: 20px;
+		}
+
+		.rainbowTop {
+			position: relative;
+			left: -24px;
+			width: 110%;
+			height: 4px;
+		}
+
+		.littleFurry {
+			width: auto;
+			margin-left: -3px;
+			margin-right: -3px;
+			margin-bottom: -30px;
+		}
+
+		.faqText p {
+			font-size: 16px;
+			width: 90%;
+			margin: auto;
+			margin-bottom: 5px;
+		}
+
+		.surveyButton {
+			display: block;
+			background-color: #d2e38c;
+			color: #41452f;
+			font-size: 30px;
+			padding: 20px;
+			border-radius: 10px;
+			margin: 5px;
+			margin-left: 50px;
+			margin-right: 50px;
+			-moz-box-shadow: 0 0 15px #bdbfd9;
+			-webkit-box-shadow: 0 0 15px #bdbfd9;
+			box-shadow: 0px 0px 15px #bdbfd9;
+		}
+
+		.surveyButton:hover {
+			background-color: #e7f1c0;
+		}
+
+		.bigSurveyButton {
+			font-size: 60px;
+		}
+
+		.statsNote {
+			background: #fffc8d;
+		}
+
+		.statsNote p {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		.sexAnswer {
+			display: inline-block;
+			width: 25%;
+			background: white;
+			color: #555555;
+			border: 1px solid #555555;
+			border-radius: 20px;
+			padding: 15px;
+			font-size: 40px;
+			margin: 5px;
+			margin-top: 15px;
+		}
+
+		.sexReasons p {
+			font-size: 21px;
+			width: auto;
+			margin: 8px;
+		}
+
+		.sexAnswerFurryBox {
+			display: inline-block;
+			width: 25%;
+			padding: 15px;
+			margin: 5px;
+		}
+
+		.section {
+			background-color: #dddddd;
+			padding: 8px;
+			border-radius: 4px;
+			font-size: 12px;
+			margin: 6px;
+			text-align: left;
+			margin-bottom: 16px;
+		}
+
+		.supportSection {
+			background-color: #d2e38c;
+			padding: 8px;
+			border-radius: 9px;
+			font-size: 12px;
+			margin: 6px;
+			text-align: center;
+			margin-bottom: 16px;
+		}
+
+		.section {
+			background: #EEEEEE;
+			-moz-box-shadow: 0 0 15px #bdbfd9;
+			-webkit-box-shadow: 0 0 15px #bdbfd9;
+			box-shadow: 0px 0px 15px #bdbfd9;
+		}
+
+		.sectionColumn {
+			display: inline-block;
+			width: 590px;
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: -6px;
+			vertical-align: top;
+		}
 		</style>
+
 		<script src="jquery-2.1.1.min.js" type="text/javascript"></script>
-		<link rel="icon" href="/img/favicon.ico">
+		<link rel="icon" href="/favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
@@ -590,11 +586,7 @@
 			var furryStats = {};
 			var totalStats = {};
 			var firstLoad = true;
-		
-			$(window).load(function() {
-				onResize();
-				
-				
+
 				var f = 0;
 				$.get('faq.txt').success(function(data) {
 					$("<div></div>").html(data).find(".section").each(function() {
@@ -619,7 +611,6 @@
 					});
 					setTimeout(fetchData, 500);
 				});
-			});
 			
 			function fetchData() {
 				$.ajax({
@@ -681,19 +672,8 @@
 					setInterval(fetchData, 120000);
 				}
 			}
-			
-			$(window).resize(onResize);
-			
-			function onResize() {
-				if($(window).width()<1150) {
-					$("#fullNav").hide();
-					$("#mobileNav").show();
-				}else {
-					$("#fullNav").show();
-					$("#mobileNav").hide();
-				}
-			}
 		</script>
+
 		</div>
 		<div class="contentContainer">
 			<div class="anchorContainer"><a class="anchor" id="info">.</a></div>
@@ -704,11 +684,8 @@
 				<p>Not: Daha Çeviri Yapım Aşamasındadır.</p>
 				<div class="navBarRightSegment">
 				</div>
-				<div id="fullNav" style="display: none">
+				<div id="fullNav" style="display: block">
 					<a href="#info"><div class="navButton">Furryler Nedİr?<div class="littleNavTex">Bİr Tanıtım</div></div></a><a href="#types"><div class="navButton">Furry TÜrlerİ<div class="littleNavTex">Topluluğa bİr bakıŞ</div></div></a><a href="#activities"><div class="navButton">Tam Olarak Furryler Ne Yapar?<div class="littleNavTex">Aktİvİteler, hobİler, ve etkİnlİkler</div></div></a><a href="#sex"><div class="navButton">Cİnsel BİrŞey mİ?<div class="littleNavTex">Topluluğun Yetİşkİn kısmı</div></div></a><a href="#faq"><div class="navButton">Sıkça sorulan sorular<div class="littleNavTex">Dİğer yaygın sorular</div></div></a>
-				</div>
-				<div id="mobileNav" style="display: none">
-					<a href="#info"><div class="navButton">Furryler Nedİr?<div class="littleNavTex">Bİr Tanıtım</div></div></a><a href="#types"><div class="navButton">Furry Türlerİ<div class="littleNavTex">Topluluğa bİr bakıŞ</div></div></a><a href="#activities"><div class="navButton">Tam Olarak Furryler Ne Yapar?<div class="littleNavTex">Aktİvİteler, hobİler, ve etkİnlİkler</div></div></a><a href="#sex"><div class="navButton">Cİnsel Bİrşey mİ?<div class="littleNavTex">Topluluğun Yetİşkİn kısmı</div></div></a><a href="#faq"><div class="navButton">Sıkça sorulan sorular<div class="littleNavTex">Dİğer yaygın sorular</div></div></a>
 				</div>
 				<div class="colorBlock blue">
 					<img src="img/rainbow_divider.png">
@@ -853,39 +830,38 @@
 				</div>
 				<div class="activityType" style="background-image: url('img/activities/furry media.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
-					<h4>Browse furry artwork and media made by other furries</h4>
-					<p><span class="furrydata">activity: furry media</span> of surveyed furries use websites like <a href="http://www.furaffinity.net/">FurAffinity</a> to browse furry artwork, writing, and other media.</p>
-					<p>Eventually, most furries realize that they're not alone: there is an entire community of people who love anthropomorphic characters just as much as they do, and even though they all come from different backgrounds and love different franchises, they all share something in common.</p>
-					<p>Once a person has discovered the furry community, the first thing they normally do is begin browsing the mountains of artwork, animation, and writing that are available online.</p>
-					<p>There are several websites dedicated to helping furries connect, talk about their interests, and share artwork/stories they've created. A few of the largest sites include:</p>
+					<h4>Diğer furryler tarafından yapılan resimlere göz atarlar </h4>
+					<p>Ankete katılan furrylerin<span class="furrydata">activity: furry media</span>'i <a href="http://www.furaffinity.net/">FurAffinity</a> gibi siteleri furry çizimlerine, yazılarına vs. bakmak için kullandıklarını belirttiler.</p>
+					<p>Nihayetinde, çoğu furryler yalnız olmadıklarını; anthropomorfik karakterleri onlar kadar seven bir topluluk olduğunu, farklı geçmişleri olsa bile aynı ortak birşeyleri paylaşırlar.</p>
+					<p>Birisi furry topluluğunu keşfettiğinde, ilk yaptıkları şey genellikle furry çizimlerine, yazılarına, animasyonlarına ve birçok şeylere göz atmaya başlarlar.</p>
+					<p>Furrylerin uzaktanda olsa buluşmalarını, aynı ortak ilgi alanlarını paylaşmalarını, yaptığı çizimleri,hikayeleri paylaşmalarına yardımcı olacak siteler kurulmuştur. En büyüklerinden birkaç örnek olarak:</p>
 					<ul>
-						<li><a target="_blank" href="http://www.furaffinity.net/">FurAffinity</a>: The largest furry site on the internet, focused on sharing art and stories. FurAffinity allows some adult content, but only for registered adult users.</li>
-						<li><a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a>: The "/r/furry/" community is part of <a href="http://www.reddit.com">reddit</a>, a massive website where people can create community forums about <span style="font-style: italic;">any</span> topic or hobby. The /r/furry/ subreddit does not allow adult content, but artistic nudity is sometimes allowed, for registered adult users.</li>
-						<li><a target="_blank" href="http://www.deviantart.com/">DeviantArt</a>: This art-sharing website is not specifically for furries, but for artists in general. It does have a large furry presence, however, and many furry artists prefer DeviantArt over FurAffinity because of its cleaner reputation and strict policy against pornographic content.</li>
+						<li><a target="_blank" href="http://www.furaffinity.net/">FurAffinity</a>; en büyük furry temalı websitesi, ana olarak sanat ve hikaye paylaşımına odaklanmıştır. Furaffinity'de bazı yetişkin içeriklerine izin vermekte ama sadece yetişkin hesaplar erişebilmektedir .</li>
+						<li><a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a>; <a href="http://www.reddit.com">Reddit</a>'in bir parçası olan "/r/Furry" topluluğu, <span style="font-style: italic;">herhangi</span> bir konu uzerine forum açabilecekleri devasa bir websitesidir. "/r/Furry" topluluğunda yetişkin içerikler izin verilmemekte ama sanatsal çıplaklığa izin verilmektedir.</li>
+						<li><a target="_blank" href="http://www.deviantart.com/">DeviantArt</a>; Ana olarak sanatsal paylaşımlar yapılan bu websitesi furryler için özellikle oluşturulmamıştır, ama büyük bir kısmını furry çizimleri oluşturmaktadır, yinede çoğu furry çizeri DevianArt'ı Furaffinity'e sıkı yetişkin içerik politikası nedeniyle daha çok tercih etmektedir.</li>
 					</ul>
 					<p></p>
 				</div>
 				<div class="activityType" style="background-image: url('img/activities/socialize.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
-					<h4>Socialize with other furries</h4>
-					<p><span class="furrydata">activity: socialize</span> of surveyed furries use the furry community as a place to socialize and meet new friends.</p>
-					<p>Furries are, as a general rule of thumb, friendly and inviting - sometimes to a fault. Like every community, the furry community has its quirks and cliques, but most furries eventually start making friends and spending time with them online. This socialization usually comes in the form of chat rooms, online gaming, or voice hangouts.</p>
-					<p>Sometimes, furries will simply talk about their favorite furry characters, or about furry artwork/movies. But most of the time, the whole "furry" thing is just a springboard for bonding over other shared experiences. Furries come from all walks of life, but some of the most prevalent common interests include: gaming, geek culture, politics, and relationships.</p>
+					<h4>Diğer furrylerle sosyalleşirler</h4>
+					<p>Ankete katılan furrylerin<span class="furrydata">activity: socialize</span>'i furry topluluğunu yeni arkadaş ve sosyaleşme amacıyla kullanmaktadır.</p>
+					<p>Furryler, genel bir kural olarak, arkadaş canlısıdır. Her topluluktada görülebileceği üzere, furry topluluğun tuhaflığı olabilmekte, ama çoğu furry nihayetinde yeni arkadaşlar bulmaya ve birlikte zaman geçirmeye başlarlar. Sosyalleşmeler çoğunlukla sohbet odalarında, internetten oyun oynayarak ya da sesli olarak sohbet ederek gerçekleşir </p>
+					<p>Bazen, furryler kendi favori furry karakterleri, çizimleri veya filmleri üzerine konuşurlar. Ama çoğunlukla furryler kimseden bir farkı olmadan sıradan gündelik konuları konuşurlar. Oyunlar, dünya/ülke gündemi, başlarına gelen acı/tatlı olayları anlatırlar. Unutulmamalıdır ki,furrylerin genellikle hakkında düşünülen bir konu olarak, kimse aynı bir konu üzerine herzaman konuşmaz. Bir zamandan sonra sürekli konuşulan konu bozmaya, sıkılmaya, artık ilgi çekici bir halden çıkmaya başlar.</p>
 				</div>
 				<div class="activityType" style="background-image: url('img/activities/fursona.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
-					<h4>Create a furry character for themselves</h4>
-					<p><span class="furrydata">activity: fursona</span> of surveyed furries have created a furry character for themselves.</p>
-					<p>Once a person has started to interact with the furry community, there is sort of an unwritten expectation that they will eventually make a character for themselves. This character - sometimes called a "fursona" - means different things to different people.</p>
-					<p>For most furries, their character is like an avatar. It's not really a representation of themselves, it's just a cool-looking character that serves as their "face" when they're hanging out with other furries.</p>
-					<p>For other furries, their character is just that: a character, like one you might find in books or movies. It doesn't actually represent them, but they use their character for acting or roleplaying with other furry characters. For these people, it's very common to have <span style="font-style: italic">many</span> characters, each with their own personality and story.</p>
-					<p>For some others, their character is something deeper: a representation of who they feel like on the inside, or someone they wish they could be. These people are not necessarily <a href="#types">otherkin</a>; they may simply be furries who enjoy the reinvention aspect of the community.</p>
+					<h4>Kendileri için furry karakterleri oluştururlar</h4>
+					<p>Ankete katılan furrylerin<span class="furrydata">activity: fursona</span>'ü kendilerine ait bir furry karakter oluşturduklarını belirtti.</p>
+					<p>Birisi furry topluluğu ile ilgilenmeye başlayınca, bir zamandan sonra kendilerine furry karakter oluştururlar. Bu karaklerler,çoğunlukla "fursona" denir, farklı kişilere farklı şeyler ifade eder.</p>
+					<p>Çoğu furryler için, kendi karakterlerini benimserler. Tam olarak kendilerini anımsatmasada, diğer furrylerle takılırkenki kişilikleri havalı duran bir karaktere dönüşür.</p>
+					<p>Diğer furryler için ise, kendi karakterleri sadece o kadardır, kitapta ya da filmde bulabileceğiniz bir karakter gibi. Kendilerini temsil etmesede, diğer furrlerle rol yaparken kullanırlar. Çoğu kişilere göre <span style="font-style: italic">birden fazla</span>, her birinin farklı kişilik ve dış görünüşlerinin olduğu karakterlere sahip olmak yaygındır.</p>
 				</div>
 				<div class="activityType" style="background-image: url('img/activities/roleplay.png');">
 					<img src="img/rainbow_divider.png" class="rainbowTop">
-					<h4>Roleplay as their character</h4>
-					<p><span class="furrydata">activity: roleplay</span> of surveyed furries have roleplayed as a furry character. This particular activity is often divisive among furries: some believe it is a core aspect of the community, while others find it cringe-inducing or annoying.</p>
-					<p>In some furry groups, it's common to spend a lot of time "in character" while chatting online. For these furries, every interaction and conversation is an opportunity to act out their character's behavior and explore their personality. This is especially popular among "<a href="#types">actor</a>" furries, who like to flesh out their character and the way they interact with the other characters around them.</p>
+					<h4>Kendi karakterleri olarak rol yapma oyunu oynarlar</h4>
+					<p>Ankete katılan furrylerin<span class="furrydata">activity: roleplay</span>'sı kendi karakterleri olarak rol yapma oyunlarına katıldıklarını belirtti. Bu aktivite, furrylerin bir kısmı için furryliğin ana unsurunu oluştururken, diğerleri için utanç verici, sıkıcı veya sinir bozucu bulurlar.</p>
+					<p>Bazı furry gruplarında, kendi karakterleri olarak uzun süreliğine sohbet etmek yaygındır. Bu furrylere göre, her etkileşim ve konuşmalar kendi karakterlerinin davranışları ve kişiliklerini keşfetmek için bir fırsattır. Bu genellikle kendi karakterlerini diğer yakındaki karakterlerle etkileşimde bulunmak isteyen "<a href="#types">aktör</a>" furrylerin arasında yaygındır.</p>
 					<p>In other furry groups, roleplay is seen as cringe-inducing, and furries who roleplay are seen as detrimental to the furry community's public image. These furries often feel that roleplay suffers from two problems: it is often very juvenille, lacking any sort of real nuance or character development, and it often devolves into flirtation. When flirtatious roleplay happens, the stark contrast between the attractiveness of furry characters and their owners is often called out as a key cringe-inducing element.</p>
 					<p>Even among furries who do not roleplay, however, it is not uncommon to make quips and casual observations based on a person's character. There are many stereotypes in the furry community, and those stereotypes are a frequent topic of conversation. For instance, furries with fox characters are often seen as promiscuous, and when furries are discussing relationship problems, they might poke fun at someone for "dating a fox" in the first place.</p>
 				</div>
