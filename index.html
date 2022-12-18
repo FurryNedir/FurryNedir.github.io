@@ -17,564 +17,568 @@
 		<meta name="twitter:title" content="Furryler Nedir?" />
 		<meta name="twitter:description" content="Furryler Nedir? Aslında Ne Yaparlar? Cinsel Birşey mi? Rakamlarla Bulalım!" />
 		<meta name="twitter:image" content="https://raw.githubusercontent.com/FurryNedir/FurryNedir.github.io/main/img/twitter_card.png" />
-
 		<style>
-		.anchor {
-			position: relative;
-			top: -100px;
-			font-size: 1px;
-		}
-
-		.activityType {
-			width: calc(95%-280px);
-			background: #EEEEEE;
-			text-align: left;
-			display: inline-block;
-			margin: 5px;
-			border-radius: 10px;
-			overflow: hidden;
-			vertical-align: text-top;
-			min-height: 276px;
-			background-repeat: no-repeat;
-			padding-left: 280px;
-			padding-bottom: 25px;
-			margin-bottom: 5px;
-			-moz-box-shadow: 0 0 15px #bdbfd9;
-			-webkit-box-shadow: 0 0 15px #bdbfd9;
-			box-shadow: 0px 0px 15px #bdbfd9;
-		}
-
-		.activityType p {
-			font-size: 17px;
-			width: auto;
-			margin: 5px;
-		}
-
-		.activityType p:first-child {
-			font-size: 18px;
-			font-weight: bold;
-		}
-
-		.activityType ul {
-			margin: 0px;
-			width: auto;
-		}
-
-		.activityType li {
-			font-size: 16px;
-			margin-top: 7px;
-		}
-
-		.barGraphLabel {
-			display: inline-block;
-			width: 45%;
-			text-align: right;
-			font-size: 17px;
-			font-weight: bold;
-		}
-
-		.barGraphBar {
-			color: #d2e38c;
-			background-color: #d2e38c;
-			display: inline-block;
-			height: 14px;
-			border-radius: 3px;
-			border: 1px solid #41452f;
-			margin-left: 6px;
-		}
-
-		.barGraphLine {
-			margin-top: 10px;
-		}
-
-		.barGraphBlue {
-			text-align: left;
-			padding-bottom: 30px;
-			width: 100%;
-			margin-left: 10%;
-		}
-
-		.barGraph {
-			margin-bottom: 30px;
-		}
-
-		.barGraphBarBlue {
-			color: #d2e38c;
-			background-color: #d2e38c;
-			display: inline-block;
-			height: 14px;
-			border-radius: 3px;
-			border: 1px solid #41452f;
-			margin-left: 6px;
-		}
-
-
-		.button {
-			width: 300px;
-			height: 40px;
-			font-size: 20px;
-			font-weight: bold;
-			text-align: center;
-			padding-top: 20px;
-			border: 1px solid black;
-			cursor: pointer;
-			display: inline-block;
-			margin: 10px;
-			border-radius: 10px;
-			text-transform: uppercase;
-		}
-
-		.content {
-			width: calc(100% - 100px);
-			max-width: 1200px;
-			background: #ffffff;
-			margin: auto;
-			text-align: center;
-			border-radius: 15px 15px 15px 15px;
-			color: #555555;
-			padding-bottom: 1px;
-			-moz-box-shadow: 0 0 35px #bdbfd9;
-			-webkit-box-shadow: 0 0 35px #bdbfd9;
-			box-shadow: 0px 0px 35px #bdbfd9;
-		}
-
-		.content a {
-			color: #3c3c3c;
-			font-weight: bold;
-			padding-left: 1px;
-			padding-right: 1px;
-		}
-
-		.content a:hover {
-			background-color: #ffffff00;
-			color: #252525;
-			border-radius: 4px;
-		}
-
-		.content p {
-			display: inline-block;
-			width: 75%;
-			font-size: 36px;
-			margin: 15px;
-			text-align: left;
-		}
-
-		.colorBlock {
-			width: 100%;
-			margin-top: 30px;
-			margin-bottom: 10px;
-			-moz-box-shadow: 0 0 15px #bdbfd9;
-			-webkit-box-shadow: 0 0 15px #bdbfd9;
-			box-shadow: 0px 0px 15px #bdbfd9;
-		}
-
-		.colorBlock.blue {
-			background-color: #a2bff9;
-			color: #273e6a;
-		}
-
-		.colorBlock img:first-child {
-			margin-bottom: 1px;
-		}
-
-		.colorBlock.red {
-			background-color: #f9b0a2;
-			color: #6a3527;
-		}
-
-		.contentContainer {
-			width: 100%;
-			text-align: center;
-		}
-
-		.constructionNotice {
-			position: fixed;
-			right: 0px;
-			top: 0px;
-			pointer-events: none;
-			width: auto;
-			z-index: 99;
-		}
-
-		.definitionWord {
-			font-size: 120px;
-			font-family: 'Crimson Text', serif;
-			display: inline;
-			color: #444444;
-		}
-
-		.definitionPOS {
-			font-size: 40px;
-			font-family: 'Crimson Text', serif;
-			display: inline;
-			color: #777777;
-		}
-
-		.definitionText {
-			font-size: 30px;
-			font-family: 'Crimson Text', serif;
-			margin-top: -20px;
-			margin-bottom: 40px;
-			color: #777777;
-		}
-		.navBar {
-			font-weight: bold;
-			position: fixed;
-			height: 60px;
-			background: #ffffff00;
-			text-align: left;
-			z-index: 5;
-		}
-
-		.navBarRightSegment {
-			position: absolute;
-			text-align: right;
-			width: 50%;
-			left: 50%;
-		}
-
-		.navButton {
-			background-color: #b5ccf9;
-			border-radius: 127px;
-			border-style: dashed;
-			display: inline-block;
-			text-transform: uppercase;
-			height: 25px;
-			padding: 20px;
-			color: #273e6a;
-			margin-top: 15px;
-		}
-
-
-		.navButtonEmphasis {
-			background-color: #d2e38c;
-		}
-
-		.navbarLogo {
-			position: absolute;
-			left: calc(50% - 60px);
-			top: calc(50% - 30px);
-			width: 120px;
-		}
-
-		.littleNavTex {
-			font-size: 11px;
-		}
-
-		.legalFooter {
-			width: 100%;
-			color: #999999;
-			font-size: 10px;
-			text-align: center;
-			margin: 20px;
-		}
-
-		.loadingIndicator {
-			height: 100px;
-		}
-
-		.firstSection {
-			font-size: 16px;
-			margin-bottom: 12px;
-		}
-
-		.faqColumn {
-			display: inline-block;
-			width: 390px;
-			margin: 0px;
-			padding: 0px;
-			margin-bottom: -6px;
-			vertical-align: top;
-		}
-
-		.supportSection:hover {
-			background-color: #f9ab6e;
-		}
-
-		body {
-			font-family: 'Roboto Condensed', sans-serif;
-			background: url('img/bg.png') #cccccc;
-			margin: 0px;
-			padding: 0px;
-			color: #333333;
-			overflow-x: hidden;
-			overflow-y: scroll;
-		}
-		h1 {
-			font-size: 60px;
-			width: calc(100% + 30px);
-			background-color: #a2bff9;
-			margin: 0px;
-			margin-left: -15px;
-			margin-bottom: -7px;
-			color: white;
-			text-transform: uppercase;
-			padding: 0px;
-			margin-top: 46px;
-			-moz-box-shadow: 0 0 35px #bdbfd9;
-			-webkit-box-shadow: 0 0 35px #bdbfd9;
-			box-shadow: 0px 0px 35px #bdbfd9;
-			border-radius: 5px;
-		}
-
-		h2 {
-			background-color: #a2bff9;
-			color: #ffffff;
-			padding: 4px;
-			width: calc(100% + 8px);
-			margin-top: -8px;
-			margin-left: -8px;
-			border-radius: 4px;
-			border-bottom-style: groove;
-			border-bottom-color: #00000024;
-		}
-		h3 {
-			font-size: 16px;
-			width: calc(100% + 30px);
-			background-color: #a2bff9;
-			margin: 0px;
-			margin-left: -15px;
-			color: white;
-			text-transform: uppercase;
-			padding: 0px;
-			padding-bottom: 10px;
-			margin-bottom: 20px;
-		}
-
-		h4 {
-			font-size: 30px;
-			margin: 5px;
-		}
-
-		h5 {
-			font-size: 10px;
-			background-color: #d2e38c;
-			border-radius: 4px;
-			padding: 4px;
-			text-transform: uppercase;
-			margin: 5px;
-		}
-
-		ul {
-			width: 70%;
-			text-align: left;
-			margin-left: 12%;
-		}
-
-		li {
-			margin-bottom: 3px;
-			font-size: 22px;
-		}
-
-		img {
-			width: 100%;
-			margin: 0px;
-		}
-		.patchnotes h2 {
-			margin-bottom: 0px;
-		}
-
-		.supportSection .sectionText {
-			text-align: center;
-		}
-
-		.supportExplanation {
-			padding: 45px;
-			padding-top: 0px;
-			font-size: 16px;
-			color: #3a2c22;
-		}
-
-		.unloadedData{
-			font-weight: bold;
-			background-color: #d2e38c;
-			padding: 0px;
-			padding-left: 4px;
-			padding-right: 4px;
-			padding-top: 0px;
-			padding-bottom: 0px;
-			border-radius: 5px;
-		}
-
-		.loadedData {
-			font-weight: bold;
-			background-color: #d2e38c;
-			padding: 0px;
-			padding-left: 4px;
-			padding-right: 4px;
-			padding-top: 0px;
-			padding-bottom: 0px;
-			border-radius: 5px;
-		}
-
-		.furryType {
-			width: 35%;
-			background: #EEEEEE;
-			text-align: left;
-			display: inline-block;
-			margin: 5px;
-			border-radius: 10px;
-			overflow: hidden;
-			vertical-align: text-top;
-			min-height: 115px;
-			background-repeat: no-repeat;
-			padding-left: 140px;
-			background-size: 138px 256px;
-			margin-bottom: 25px;
-			-moz-box-shadow: 0 0 15px #bdbfd9;
-			-webkit-box-shadow: 0 0 15px #bdbfd9;
-			box-shadow: 0px 0px 15px #bdbfd9;
-		}
-
-		.furryTypeImage {
-			position: relative;
-			left: 0px;
-			top: 0px;
-			width: 276px;
-			height: 211px;
-		}
-
-		.furryType p {
-			font-size: 18px;
-			font-weight: bold;
-			margin: 5px;
-		}
-
-		.popularityCircle {
-			width: 75px;
-			top: -5;
-			position: relative;
-		}
-
-		.furrydata {
-			display: inline-block;
-		}
-
-		.totaldata {
-			display: inline-block;
-		}
-
-		.loadingDataGIF {
-			width: 20px;
-			height: 20px;
-		}
-
-		.rainbowTop {
-			position: relative;
-			left: -24px;
-			width: 110%;
-			height: 4px;
-		}
-
-		.littleFurry {
-			width: auto;
-			margin-left: -3px;
-			margin-right: -3px;
-			margin-bottom: -30px;
-		}
-
-		.faqText p {
-			font-size: 16px;
-			width: 90%;
-			margin: auto;
-			margin-bottom: 5px;
-		}
-
-		.surveyButton {
-			display: block;
-			background-color: #d2e38c;
-			color: #41452f;
-			font-size: 30px;
-			padding: 20px;
-			border-radius: 10px;
-			margin: 5px;
-			margin-left: 50px;
-			margin-right: 50px;
-			-moz-box-shadow: 0 0 15px #bdbfd9;
-			-webkit-box-shadow: 0 0 15px #bdbfd9;
-			box-shadow: 0px 0px 15px #bdbfd9;
-		}
-
-		.surveyButton:hover {
-			background-color: #e7f1c0;
-		}
-
-		.bigSurveyButton {
-			font-size: 60px;
-		}
-
-		.statsNote {
-			background: #fffc8d;
-		}
-
-		.statsNote p {
-			font-size: 15px;
-			margin-bottom: 10px;
-		}
-
-		.sexAnswer {
-			display: inline-block;
-			width: 25%;
-			background: white;
-			color: #555555;
-			border: 1px solid #555555;
-			border-radius: 20px;
-			padding: 15px;
-			font-size: 40px;
-			margin: 5px;
-			margin-top: 15px;
-		}
-
-		.sexReasons p {
-			font-size: 21px;
-			width: auto;
-			margin: 8px;
-		}
-
-		.sexAnswerFurryBox {
-			display: inline-block;
-			width: 25%;
-			padding: 15px;
-			margin: 5px;
-		}
-
-		.section {
-			background-color: #dddddd;
-			padding: 8px;
-			border-radius: 4px;
-			font-size: 12px;
-			margin: 6px;
-			text-align: left;
-			margin-bottom: 16px;
-		}
-
-		.supportSection {
-			background-color: #d2e38c;
-			padding: 8px;
-			border-radius: 9px;
-			font-size: 12px;
-			margin: 6px;
-			text-align: center;
-			margin-bottom: 16px;
-		}
-
-		.section {
-			background: #EEEEEE;
-			-moz-box-shadow: 0 0 15px #bdbfd9;
-			-webkit-box-shadow: 0 0 15px #bdbfd9;
-			box-shadow: 0px 0px 15px #bdbfd9;
-		}
-
-		.sectionColumn {
-			display: inline-block;
-			width: 590px;
-			margin: 0px;
-			padding: 0px;
-			margin-bottom: -6px;
-			vertical-align: top;
-		}
+			.content a {
+				color: #3c3c3c;
+				text-decoration: underline;
+				font-weight: bold;
+				padding-left: 1px;
+				padding-right: 1px;
+			}
+			
+			.content a:hover {
+				background-color: #ffffff00;
+				color: #252525;
+				border-radius: 4px;
+			}
+			
+			.constructionNotice {
+				position: fixed;
+				right: 0px;
+				top: 0px;
+				pointer-events: none;
+				width: auto;
+				z-index: 99;
+			}
+			
+			body {
+				font-family: 'Roboto Condensed', sans-serif;
+				background: url('img/bg.png') #cccccc;
+				margin: 0px;
+				padding: 0px;
+				color: #333333;
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+			
+			.button {
+				width: 300px;
+				height: 40px;
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+				padding-top: 20px;
+				border: 1px solid black;
+				cursor: pointer;
+				display: inline-block;
+				margin: 10px;
+				border-radius: 10px;
+				text-transform: uppercase;
+			}
+			
+			.navBar {
+				font-weight: bold;
+				position: fixed;
+				height: 60px;
+				background: #ffffff00;
+				text-align: left;
+				z-index: 5;
+			}
+			
+			.navBarRightSegment {
+				position: absolute;
+				text-align: right;
+				width: 50%;
+				left: 50%;
+			}
+			
+			.navButton {
+				background-color: #b5ccf9;
+				border-radius: 127px;
+				border-style: dashed;
+				display: inline-block;
+				text-transform: uppercase;
+				height: 25px;
+				padding: 20px;
+				color: #273e6a;
+				margin-top: 15px;
+				margin-bottom: -10px;
+			}
+			
+			.surveyButton {
+				display: block;
+				background-color: #d2e38c;
+				color: #41452f;
+				font-size: 30px;
+				padding: 20px;
+				border-radius: 10px;
+				margin: 5px;
+				margin-left: 50px;
+				margin-right: 50px;
+				-moz-box-shadow: 0 0 15px #bdbfd9;
+				-webkit-box-shadow: 0 0 15px #bdbfd9;
+				box-shadow: 0px 0px 15px #bdbfd9;
+			}
+			
+			.surveyButton:hover {
+				background-color: #e7f1c0;
+			}
+			
+			.bigSurveyButton {
+				font-size: 60px;
+			}
+			
+			.navButtonEmphasis {
+				background-color: #d2e38c;
+			}
+			
+			.navbarLogo {
+				position: absolute;
+				left: calc(50% - 60px);
+				top: calc(50% - 30px);
+				width: 120px;
+			}
+			
+			.littleNavTex {
+				font-size: 11px;
+			}
+			
+			.legalFooter {
+				width: 100%;
+				color: #999999;
+				font-size: 10px;
+				text-align: center;
+				margin: 20px;
+			}
+			
+			.contentContainer {
+				width: 100%;
+				text-align: center;
+			}
+			
+			.content {
+				width: calc(100% - 100px);
+				max-width: 1200px;
+				background: #ffffff;
+				margin: auto;
+				text-align: center;
+				border-radius: 15px 15px 15px 15px;
+				color: #555555;
+				padding-bottom: 1px;
+				-moz-box-shadow: 0 0 35px #bdbfd9;
+				-webkit-box-shadow: 0 0 35px #bdbfd9;
+				box-shadow: 0px 0px 35px #bdbfd9;
+			}
+			
+			h1 {
+				font-size: 60px;
+				width: calc(100% + 30px);
+				background-color: #a2bff9;
+				margin: 0px;
+				margin-left: -15px;
+				margin-bottom: -7px;
+				color: white;
+				text-transform: uppercase;
+				padding: 0px;
+				margin-top: 46px;
+				-moz-box-shadow: 0 0 35px #bdbfd9;
+				-webkit-box-shadow: 0 0 35px #bdbfd9;
+				box-shadow: 0px 0px 35px #bdbfd9;
+				border-radius: 5px;
+			}
+			
+			h3 {
+				font-size: 16px;
+				width: calc(100% + 30px);
+				background-color: #a2bff9;
+				margin: 0px;
+				margin-left: -15px;
+				color: white;
+				text-transform: uppercase;
+				padding: 0px;
+				padding-bottom: 10px;
+				margin-bottom: 20px;
+			}
+			
+			.firstSection {
+				font-size: 16px;
+				margin-bottom: 12px;
+			}
+			
+			.faqColumn {
+				display: inline-block;
+				width: 390px;
+				margin: 0px;
+				padding: 0px;
+				margin-bottom: -6px;
+				vertical-align: top;
+			}
+			
+			.loadingIndicator {
+				height: 100px;
+			}
+			
+			.sectionColumn {
+				display: inline-block;
+				width: 590px;
+				margin: 0px;
+				padding: 0px;
+				margin-bottom: -6px;
+				vertical-align: top;
+			}
+			
+			.section {
+				background-color: #dddddd;
+				padding: 8px;
+				border-radius: 4px;
+				font-size: 12px;
+				margin: 6px;
+				text-align: left;
+				margin-bottom: 16px;
+			}
+			
+			.supportSection {
+				background-color: #d2e38c;
+				padding: 8px;
+				border-radius: 9px;
+				font-size: 12px;
+				margin: 6px;
+				text-align: center;
+				margin-bottom: 16px;
+			}
+			
+			.supportSection:hover {
+				background-color: #f9ab6e;
+			}
+			
+			h2 {
+				background-color: #a2bff9;
+				color: #ffffff;
+				padding: 4px;
+				width: calc(100% + 8px);
+				margin-top: -8px;
+				margin-left: -8px;
+				border-radius: 4px;
+				border-bottom-style: groove;
+				border-bottom-color: #00000024;
+			}
+			
+			.patchnotes h2 {
+				margin-bottom: 0px;
+			}
+			
+			.anchor {
+				position: relative;
+				top: -100px;
+				font-size: 1px;
+			}
+			
+			h4 {
+				font-size: 30px;
+				margin: 5px;
+			}
+			
+			h5 {
+				font-size: 10px;
+				background-color: #d2e38c;
+				border-radius: 4px;
+				padding: 4px;
+				text-transform: uppercase;
+				margin: 5px;
+			}
+			
+			.supportSection .sectionText {
+				text-align: center;
+			}
+			
+			.supportExplanation {
+				padding: 45px;
+				padding-top: 0px;
+				font-size: 16px;
+				color: #3a2c22;
+			}
+			
+			.content p {
+				display: inline-block;
+				width: 75%;
+				font-size: 36px;
+				margin: 15px;
+				text-align: left;
+			}
+			
+			.definitionWord {
+				font-size: 120px;
+				font-family: 'Crimson Text', serif;
+				display: inline;
+				color: #444444;
+			}
+			
+			.definitionPOS {
+				font-size: 40px;
+				font-family: 'Crimson Text', serif;
+				display: inline;
+				color: #777777;
+			}
+			
+			.definitionText {
+				font-size: 30px;
+				font-family: 'Crimson Text', serif;
+				margin-top: -20px;
+				margin-bottom: 40px;
+				color: #777777;
+			}
+			
+			.colorBlock {
+				width: 100%;
+				margin-top: 65px;
+				margin-bottom: 10px;
+				-moz-box-shadow: 0 0 15px #bdbfd9;
+				-webkit-box-shadow: 0 0 15px #bdbfd9;
+				box-shadow: 0px 0px 15px #bdbfd9;
+			}
+			
+			.colorBlock.blue {
+				background-color: #a2bff9;
+				color: #273e6a;
+			}
+			
+			.colorBlock img:first-child {
+				margin-bottom: 1px;
+			}
+			
+			.colorBlock.red {
+				background-color: #f9b0a2;
+				color: #6a3527;
+			}
+			
+			img {
+				width: 100%;
+				margin: 0px;
+			}
+			
+			.unloadedData{
+				background-color: #ffffff00;
+				padding: auto;
+				padding-left: 5;
+				padding-right: 5;
+				padding-top: 5;
+				padding-bottom: 5;
+			}
+			
+			.loadedData {
+				font-weight: bold;
+				background-color: #d2e38c;
+				padding: 0px;
+				padding-left: 4px;
+				padding-right: 4px;
+				padding-top: 0px;
+   				padding-bottom: 0px;
+				border-radius: 5px;
+			}
+			
+			ul {
+				width: 70%;
+				text-align: left;
+				margin-left: 12%;
+			}
+			
+			li {
+				margin-bottom: 3px;
+				font-size: 22px;
+			}
+			
+			.activityType {
+				width: calc(95%-280px);
+				background: #EEEEEE;
+				text-align: left;
+				display: inline-block;
+				margin: 5px;
+				border-radius: 10px;
+				overflow: hidden;
+				vertical-align: text-top;
+				min-height: 276px;
+				background-repeat: no-repeat;
+				padding-left: 280px;
+				padding-bottom: 25px;
+				margin-bottom: 5px;
+				-moz-box-shadow: 0 0 15px #bdbfd9;
+				-webkit-box-shadow: 0 0 15px #bdbfd9;
+				box-shadow: 0px 0px 15px #bdbfd9;
+			}
+			
+			.activityType p {
+				font-size: 17px;
+				width: auto;
+				margin: 5px;
+			}
+			
+			.activityType p:first-child {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.furryType {
+				width: 35%;
+				background: #EEEEEE;
+				text-align: left;
+				display: inline-block;
+				margin: 5px;
+				border-radius: 10px;
+				overflow: hidden;
+				vertical-align: text-top;
+				min-height: 115px;
+				background-repeat: no-repeat;
+				padding-left: 140px;
+				background-size: 138px 256px;
+				margin-bottom: 25px;
+				-moz-box-shadow: 0 0 15px #bdbfd9;
+				-webkit-box-shadow: 0 0 15px #bdbfd9;
+				box-shadow: 0px 0px 15px #bdbfd9;
+			}
+			
+			.furryTypeImage {
+				position: relative;
+				left: 0px;
+				top: 0px;
+				width: 276px;
+				height: 211px;
+			}
+			
+			.furryType p {
+				font-size: 18px;
+				font-weight: bold;
+				margin: 5px;
+			}
+			
+			.popularityCircle {
+				width: 75px;
+				top: -5;
+				position: relative;
+			}
+			
+			.furrydata {
+				display: inline-block;
+			}
+			
+			.totaldata {
+				display: inline-block;
+			}
+			
+			.loadingDataGIF {
+				width: 20px;
+				height: 20px;
+			}
+			
+			.statsNote {
+				background: #fffc8d;
+			}
+			
+			.statsNote p {
+				font-size: 15px;
+				margin-bottom: 10px;
+			}
+			
+			.activityType ul {
+				margin: 0px;
+				width: auto;
+			}
+			
+			.activityType li {
+				font-size: 16px;
+				margin-top: 7px;
+			}
+			
+			.noUnderline {
+				text-decoration: none !important;
+			}
+			
+			.barGraphLabel {
+				display: inline-block;
+				width: 45%;
+				text-align: right;
+				font-size: 17px;
+				font-weight: bold;
+			}
+			
+			.barGraphBar {
+				color: #d2e38c;
+				background-color: #d2e38c;
+				display: inline-block;
+				height: 14px;
+				border-radius: 3px;
+				border: 1px solid #41452f;
+				margin-left: 6px;
+			}
+			
+			.barGraphLine {
+				margin-top: 10px;
+			}
+			
+			.barGraphBlue {
+				text-align: left;
+				padding-bottom: 30px;
+				width: 100%;
+				margin-left: 10%;
+			}
+			
+			.barGraph {
+				margin-bottom: 30px;
+			}
+			
+			.barGraphBarBlue {
+				color: #d2e38c;
+				background-color: #d2e38c;
+				display: inline-block;
+				height: 14px;
+				border-radius: 3px;
+				border: 1px solid #41452f;
+				margin-left: 6px;
+			}
+			
+			.rainbowTop {
+				position: relative;
+				left: -24px;
+				width: 110%;
+				height: 4px;
+			}
+			
+			.sexAnswer {
+				display: inline-block;
+				width: 25%;
+				background: white;
+				color: #555555;
+				border: 1px solid #555555;
+				border-radius: 20px;
+				padding: 15px;
+				font-size: 40px;
+				margin: 5px;
+				margin-top: 15px;
+			}
+			
+			.sexAnswerFurryBox {
+				display: inline-block;
+				width: 25%;
+				padding: 15px;
+				margin: 5px;
+			}
+			
+			.littleFurry {
+				width: auto;
+				margin-left: -3px;
+				margin-right: -3px;
+				margin-bottom: -30px;
+			}
+			
+			.sexReasons p {
+				font-size: 21px;
+				width: auto;
+				margin: 8px;
+			}
+			
+			.faqText p {
+				font-size: 16px;
+				width: 90%;
+				margin: auto;
+				margin-bottom: 5px;
+			}
+			
+			.section {
+				background: #EEEEEE;
+				-moz-box-shadow: 0 0 15px #bdbfd9;
+				-webkit-box-shadow: 0 0 15px #bdbfd9;
+				box-shadow: 0px 0px 15px #bdbfd9;
+			}
 		</style>
-
 		<script src="jquery-2.1.1.min.js" type="text/javascript"></script>
 		<link rel="icon" href="/favicon.ico">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -586,7 +590,11 @@
 			var furryStats = {};
 			var totalStats = {};
 			var firstLoad = true;
-
+		
+			$(window).load(function() {
+				onResize();
+				
+				
 				var f = 0;
 				$.get('faq.txt').success(function(data) {
 					$("<div></div>").html(data).find(".section").each(function() {
@@ -611,6 +619,7 @@
 					});
 					setTimeout(fetchData, 500);
 				});
+			});
 			
 			function fetchData() {
 				$.ajax({
@@ -672,8 +681,19 @@
 					setInterval(fetchData, 120000);
 				}
 			}
+			
+			$(window).resize(onResize);
+			
+			function onResize() {
+				if($(window).width()<1150) {
+					$("#fullNav").hide();
+					$("#mobileNav").show();
+				}else {
+					$("#fullNav").show();
+					$("#mobileNav").hide();
+				}
+			}
 		</script>
-
 		</div>
 		<div class="contentContainer">
 			<div class="anchorContainer"><a class="anchor" id="info">.</a></div>
@@ -684,8 +704,11 @@
 				<p>Not: Daha Çeviri Yapım Aşamasındadır.</p>
 				<div class="navBarRightSegment">
 				</div>
-				<div id="fullNav" style="display: block">
+				<div id="fullNav" style="display: none">
 					<a href="#info"><div class="navButton">Furryler Nedİr?<div class="littleNavTex">Bİr Tanıtım</div></div></a><a href="#types"><div class="navButton">Furry TÜrlerİ<div class="littleNavTex">Topluluğa bİr bakıŞ</div></div></a><a href="#activities"><div class="navButton">Tam Olarak Furryler Ne Yapar?<div class="littleNavTex">Aktİvİteler, hobİler, ve etkİnlİkler</div></div></a><a href="#sex"><div class="navButton">Cİnsel BİrŞey mİ?<div class="littleNavTex">Topluluğun Yetİşkİn kısmı</div></div></a><a href="#faq"><div class="navButton">Sıkça sorulan sorular<div class="littleNavTex">Dİğer yaygın sorular</div></div></a>
+				</div>
+				<div id="mobileNav" style="display: none">
+					<a href="#info"><div class="navButton">Furryler Nedİr?<div class="littleNavTex">Bİr Tanıtım</div></div></a><a href="#types"><div class="navButton">Furry Türlerİ<div class="littleNavTex">Topluluğa bİr bakıŞ</div></div></a><a href="#activities"><div class="navButton">Tam Olarak Furryler Ne Yapar?<div class="littleNavTex">Aktİvİteler, hobİler, ve etkİnlİkler</div></div></a><a href="#sex"><div class="navButton">Cİnsel Bİrşey mİ?<div class="littleNavTex">Topluluğun Yetİşkİn kısmı</div></div></a><a href="#faq"><div class="navButton">Sıkça sorulan sorular<div class="littleNavTex">Dİğer yaygın sorular</div></div></a>
 				</div>
 				<div class="colorBlock blue">
 					<img src="img/rainbow_divider.png">
