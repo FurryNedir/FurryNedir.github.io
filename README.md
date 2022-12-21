@@ -8,3 +8,4 @@ We only translated this site, all the work is belongs to the original maker. We 
 ##### 2- Darkbloodking (Çeviri)
 ##### 3- Guro (Çeviri)
 
+![owo](https://avatars.githubusercontent.com/u/67545942?s=96&v=4 "uwu")
