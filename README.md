@@ -5,7 +5,7 @@ We only translated this site, all the work is belongs to the original maker. We 
 ## Projede katkıda bulunanlar:
 ##### 0- Fek (Orijinal Olarak Sitenin Tamamı Kendisi Tarafından Yapılmıştır.)
 ##### ![](https://avatars.githubusercontent.com/u/67545942?s=48&v=4) 1- Kekstogo (Sitedeki Bazı Yerlerin Yeniden Tasarımı, Sitedeki Eksiklikler, Sitedeki Hatalar, Çeviri, vs.)
-##### 2- Darkbloodking (Çeviri)
+##### ![](https://avatars.githubusercontent.com/u/71722525?s=48&v=4) 2- Darkbloodking (Çeviri)
 ##### 3- Guro (Çeviri)
 
 
