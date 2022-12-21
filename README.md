@@ -1,5 +1,5 @@
 # FurryNedir.github.io
-[](https://raw.githubusercontent.com/FurryNedir/FurryNedir.github.io/main/img/graph_preview.png)
+[owo](https://raw.githubusercontent.com/FurryNedir/FurryNedir.github.io/main/img/graph_preview.png)
 https://whatarefurries.com Sitesinin Türkçeleştirilmiş Versiyonu. https://furrynedir.github.io
 ## Note: this page is a translation from https://whatarefurries.com.
 We only translated this site, all the work is belongs to the original maker. We also asked Fek to translate the website.
