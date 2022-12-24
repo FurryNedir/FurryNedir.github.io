@@ -599,9 +599,9 @@
 			var furryStats = {};
 			var totalStats = {};
 			var firstLoad = true;
-				
+
+			$(window).load(function() {
 				var f = 0;
-					
 					$(".furrydata").each(function() {
 						$(this).addClass("unloadedData").data("varname", $(this).html()).html("<img class='loadingDataGIF' src='img/loadingdata.gif'>");
 					});
@@ -609,7 +609,8 @@
 						$(this).addClass("unloadedData").data("varname", $(this).html()).html("<img class='loadingDataGIF' src='img/loadingdata.gif'>");
 					});
 					setTimeout(fetchData, 500);
-			
+				});
+
 			function fetchData() {
 				$.ajax({
 					url: "https://www.whatarefurries.com/getData.php",
