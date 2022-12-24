@@ -83,7 +83,7 @@
 			}
 			
 			.navButton {
-				background-color: #00000000;
+				background-color: #101828;
 				border-radius: 127px;
 				border-style: dashed;
 				display: inline-block;
@@ -195,7 +195,16 @@
 				margin-bottom: 12px;
 			}
 			
-			.faqColumn {
+			.faqColumn0 {
+				display: inline-block;
+				width: 390px;
+				margin: 0px;
+				padding: 0px;
+				margin-bottom: -6px;
+				vertical-align: top;
+			}
+
+			.faqColumn1 {
 				display: inline-block;
 				width: 390px;
 				margin: 0px;
@@ -314,9 +323,9 @@
 			.definitionText {
 				font-size: 30px;
 				font-family: 'Crimson Text', serif;
-				margin-top: -20px;
-				margin-bottom: 40px;
-				color: #b5b5b5;
+				margin-top: -15px;
+				margin-bottom: 5px;
+				color: #777777;
 			}
 			
 			.colorBlock {
@@ -574,14 +583,14 @@
 			}
 			
 			.section {
-				background: #EEEEEE;
+				background: #1e1e1e;
 				-moz-box-shadow: 0 0 15px #000000;
 				-webkit-box-shadow: 0 0 15px #000000;
 				box-shadow: 0px 0px 15px #000000;
 			}
 		</style>
 		<script src="jquery-2.1.1.min.js" type="text/javascript"></script>
-		<link rel="icon" href="/favicon.ico">
+		<link rel="icon" type="image/png" href="favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
@@ -591,26 +600,8 @@
 			var furryStats = {};
 			var totalStats = {};
 			var firstLoad = true;
-		
-			$(window).load(function() {
-				onResize();
-				
 				
 				var f = 0;
-				$.get('faq.txt').success(function(data) {
-					$("<div></div>").html(data).find(".section").each(function() {
-						$('#FAQ' + f).append($(this).clone());
-						var lowestHeight = $("#FAQ0").height();
-						f = 0;
-						if($("#FAQ1").height()<lowestHeight) {
-							f = 1;
-							lowestHeight = $("#FAQ1").height();
-						}
-						if($("#FAQ2").height()<lowestHeight) {
-							f = 2;
-							lowestHeight = $("#FAQ2").height();
-						}
-					}).delay(1).queue(function() { $(this).remove(); });
 					
 					$(".furrydata").each(function() {
 						$(this).addClass("unloadedData").data("varname", $(this).html()).html("<img class='loadingDataGIF' src='img/loadingdata.gif'>");
@@ -619,8 +610,6 @@
 						$(this).addClass("unloadedData").data("varname", $(this).html()).html("<img class='loadingDataGIF' src='img/loadingdata.gif'>");
 					});
 					setTimeout(fetchData, 500);
-				});
-			});
 			
 			function fetchData() {
 				$.ajax({
@@ -682,44 +671,18 @@
 					setInterval(fetchData, 120000);
 				}
 			}
-			
-			$(window).resize(onResize);
-			
-			function onResize() {
-				if($(window).width()<1150) {
-					$("#fullNav").hide();
-					$("#mobileNav").show();
-				}else {
-					$("#fullNav").show();
-					$("#mobileNav").hide();
-				}
-			}
 		</script>
 		</div>
 		<div class="contentContainer">
 			<div class="anchorContainer"><a class="anchor" id="info">.</a></div>
 			<div style="display: block; height: 50px;"></div>
 			<div class="content">	
-				<div class="definitionWord">fur<span style="font-family: sans-serif">·</span>ry</div><div class="definitionPOS">(isim)</div><div class="definitionText"><a target="_blank" style="color: #a1a1a1" href="https://www.merriam-webster.com/dictionary/anthropomorphic">anthropomorfik</a> hayvan karakterlerden hoşlanan kimse.</div>
-				<p>Bu en güvenli, en genelleyici, <span style="font-style: italic">en sıkıcı</span> size verilebilecek bir cevap, aslen doğru olsa da, çok yardımcı değil.</p>
+				<div class="definitionWord">fur<span style="font-family: sans-serif">·</span>ry</div><div class="definitionPOS">(isim)</div><div class="definitionText"><a target="_blank" style="color: #777777" href="https://www.merriam-webster.com/dictionary/anthropomorphic">anthropomorfik</a> hayvan karakterlerden hoşlanan kimse.</div>
+				<p>Bu cevap aslında doğru olsada, alabileceğiniz en genelleyici, <span style="font-style: italic">en sıkıcı</span> yanıtlardan biri, ve pekde furryleri açıklamaya yardımcı olduğu söylenemez. </p>
 				<p>Not: Daha Çeviri Yapım Aşamasındadır.</p>
 				<div class="navBarRightSegment">
 				</div>
-				<div id="fullNav" style="display: none">
-					<a href="#info">
-						<div class="navButton">Furryler Nedİr?<div class="littleNavTex">Bİr Tanıtım</div></div></a>
-					<a href="#types">
-						<div class="navButton">Furry TÜrlerİ<div class="littleNavTex">Topluluğa bİr bakıŞ</div></div></a>
-					<a href="#activities">
-						<div class="navButton">Tam Olarak Furryler Ne Yapar?<div class="littleNavTex">Aktİvİteler, hobİler, ve etkİnlİkler</div></div></a>
-					<a href="#sex">
-						<div class="navButton">Cİnsel BİrŞey mİ?<div class="littleNavTex">Topluluğun Yetİşkİn kısmı</div></div></a>
-					<a href="#faq">
-						<div class="navButton">Sıkça sorulan sorular<div class="littleNavTex">Dİğer yaygın sorular</div></div></a>
-					<a href="index.html">
-						<div class="navButton">Aydınlık Modu<div class="littleNavTex">owo</div></div></a>
-				</div>
-				<div id="mobileNav" style="display: none">
+				<div>
 					<a href="#info">
 						<div class="navButton">Furryler Nedİr?<div class="littleNavTex">Bİr Tanıtım</div></div></a>
 					<a href="#types">
@@ -1124,7 +1087,6 @@
 				<div class="colorBlock blue">
 					<img src="darkimg/rainbow_divider.png">
 					<p>Many people enjoy sex without letting it define who they are. In the same way, sex is not a defining characteristic of the furry community: it's just something that many furries enjoy in the background.</p>
-					<div style="display: block; height: 50px;"></div>
 					<img src="darkimg/rainbow_divider.png">
 				</div>
 			</div>
@@ -1132,14 +1094,53 @@
 			<div class="content">
 				<h1>FAQ</h1>
 				<div class="anchorContainer"><a class="anchor" id="faq">.</a></div>
-				<div style="display: block; height: 50px;"></div>
-				<div class="faqColumn" id="FAQ0">
-				</div>
-				<div class="faqColumn" id="FAQ1">
-				</div>
-				<div class="faqColumn" id="FAQ2">
-				</div>
+
+			<div class="faqColumn0">
+				<div class="section">
+					<div class="faqText"><h2>What's up with the costumes?</h2>
+					<p>Fursuits are just one small part of the furry community, and only about <span class="furrydata unloadedData">activity: owned fursuit</span> of furries own one.</p>
+					<p>Furries who fursuit do it for <a href="#fursuit">a variety of reasons</a>, but most of those reasons are just about letting loose, having fun, and making people happy.</p>
+				</div></div>
+				<div class="section">
+					<div class="faqText"><h2>Why does it seem like many furries are gay?</h2>
+					<p>The furry community is one that prides itself on being open, inviting, and accepting.</p>
+					<p>Because of this, many LGBT people who feel out of place in the mainstream world see the furry community as a safe place - somewhere that allows them to be who they really are.</p>
+					<p>In many instances, this feeling of security and acceptance causes people to form a strong, positive association between the furry community and their sexuality.</p>
+				</div></div>
+				<div class="section">
+					<div class="faqText"><h2>Are furries zoophiles?</h2>
+					<p>No. Zoophilia is completely unrelated to the furry community.</p>
+					<p>One of the core characteristics of the furry community - including the adult portion of the community - is an appreciation for animals who are <span style="font-weight: bold">anthropomorphized</span>, which means they can think, speak, consent, and <span style="font-style: italic">look</span> like humans.</p>
+					<p>Real animals are not capable of thought, speech, or consent on the same level as humans. More importantly, real animals do not look human in any way, so they are not sexually attractive to most furries.</p>
+					</div></div>
+				<div class="section">
+					<div class="faqText"><h2>I know someone who likes animated movies / animal races in video games. Are they a furry?</h2>
+					<p>Probably not, but maybe!</p>
+					<p>In the same way that it's possible to enjoy Star Trek without being a "trekkie," there are a lot of people who enjoy animated movies and animal races, but don't consider themselves furries.</p>
+					</div></div>
 			</div>
+
+			<div class="faqColumn1">
+				<div class="section">
+					<div class="faqText"><h2>Do furries think that they're animals?</h2>
+					<p>Only about <span class="furrydata unloadedData">otherkin</span> of furries are <a target="_blank" href="https://en.wikipedia.org/wiki/Therianthropy#Psychiatric_aspects">therians</a> or <a target="_blank" href="https://en.wikipedia.org/wiki/Otherkin">otherkin</a>: people who believe they are an animal "trapped" in a human body.</p>
+				</div></div>
+				<div class="section">
+					<div class="faqText"><h2>Who made this site, and what's your angle?</h2>
+					<p>Howdy! I'm a furry from the Midwest who makes furry content for a living.</p>
+					<p>I made this site because when you google "what are furries?", the top results are a boring wikipedia page and a bunch of sensationalist news articles. I wanted to change that.</p>
+					<p>For most furries, being a furry is a private, silly thing, not a big part of their identity. But some furries feel the need to "come out" as furries, and others are "outed" accidentally. I wanted to make a resource that those people could use to try to explain the whole "furry" thing to others.</p>
+				</div></div>
+				<div class="section">
+					<div class="faqText"><h2>How was this data collected?</h2>
+					<p>The surveys used to build this website were posted on several online furry communities, by fairly prominent members of those communities. The surveys can also be taken by anyone who visits this page.</p>
+					<p>Most of the survey responses come from <a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a>, a furry community with about 34,000 members.</p>
+					<p>The remaining survey responses were collected on furry art websites like <a target="_blank" href="http://www.furaffinity.net/">FurAffinity</a>. Because these websites often allow adult art, the survey results may be slightly skewed in favor of sex-positive answers.</p>
+					<p>It's important to remember that, like any other survey, the numbers shown on this website only represent a small portion of the furry community. Furries with strong opinions and a high degree of activity within the community are more likely to take voluntary surveys.</p>
+				</div></div></div>
+				<div style="display: block; height: 6px;"></div>
+			</div></div>
+			
 			<div class="anchorContainer"><a class="anchor" id="surveys">.</a></div>
 			<div class="content">
 				<h1>Surveys</h1>
