@@ -695,6 +695,17 @@
 					}
 					$("<img class='littleFurry' src='img/littlefurries/"+(Math.round(Math.random() * 100) % 10)+".png'>").appendTo("#sexAnswer"+a).css("opacity",(.5 + Math.random()*.5));
 				}
+				for(var f=0; f<150; f++) {
+					var a;
+					if(f+1<10.1*furryStats["sex: yes"].split("%")[0]) {
+						a = 3;
+					} else if(f<1.3*(furryStats["sex: yes"].split("%")[0] * 1 + furryStats["sex: can be"].split("%")[0] * 1)) {
+						a = 4;
+					} else {
+						a = 5;
+					}
+					$("<img class='littleFurry' src='img/littlefurries/"+(Math.round(Math.random() * 100) % 10)+".png'>").appendTo("#sexAnswer"+a).css("opacity",(.5 + Math.random()*.5));
+				}
 				if(firstLoad) {
 					firstLoad = false;
 					setInterval(fetchData, 120000);
@@ -1101,6 +1112,9 @@
 				</div>
 				<p>Among furries who enjoy furry pornography, <span class="furrydata">furry porn: enjoy or okay</span> say they don't <span style="font-style: italic">need</span> furry pornography: it's just something they enjoy in addition to normal pornography.</p>
 				<p>Beyond pornographic art, there are a few other adult outlets that furries sometimes enjoy:</p>
+				<div class="sexAnswerFurryBox" id="sexAnswer3"></div>
+				<div class="sexAnswerFurryBox" id="sexAnswer4"></div>
+				<div class="sexAnswerFurryBox" id="sexAnswer5"></div>
 				<div class="sexAnswer">
 					Erotic Roleplay
 					<br><span style="font-size: 16px;"><span class="furrydata">like: erp</span> of surveyed furries</span>
@@ -1113,10 +1127,11 @@
 					Fursuit Sex
 					<br><span style="font-size: 16px;"><span class="furrydata">like: murrsuits</span> of surveyed furries</span>
 				</div>
+				<div class="littleFurryContainer" id="littleFurry_sex"></div>
 				<div class="colorBlock blue">
-					<img src="darkimg/rainbow_divider.png">
+					<img src="img/rainbow_divider.png">
 					<p>Many people enjoy sex without letting it define who they are. In the same way, sex is not a defining characteristic of the furry community: it's just something that many furries enjoy in the background.</p>
-					<img src="darkimg/rainbow_divider.png">
+					<img src="img/rainbow_divider.png">
 				</div>
 			</div>
 			
