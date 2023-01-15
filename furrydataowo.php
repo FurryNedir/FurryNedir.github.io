@@ -1,4 +1,4 @@
-Response count,5162,of total %,of furries %,,,
+Response count,5163,% of total,% of furries,,,
 Furry count,5040,%97.6, 100.0,,,
 Furry: talkative,199,%3.9,%3.9,,,
 Furry: appropriate,2692,%52.2,%53.4,,,
