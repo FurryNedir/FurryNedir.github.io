@@ -103,9 +103,9 @@
 				padding: 20px;
 				border-radius: 10px;
 				margin: 5px;
-				-moz-box-shadow: 0 0 15px #000000;
-				-webkit-box-shadow: 0 0 15px #000000;
-				box-shadow: 0px 0px 15px #000000;
+				-moz-box-shadow: 0 0 15px #000000db;
+				-webkit-box-shadow: 0 0 15px #000000db;
+				box-shadow: 0px 0px 15px #000000db;
 			}
 			
 			.surveybox0 {
@@ -170,9 +170,9 @@
 				border-radius: 15px 15px 15px 15px;
 				color: #b5b5b5;
 				padding-bottom: 1px;
-				-moz-box-shadow: 0 0 35px #000000;
-				-webkit-box-shadow: 0 0 35px #000000;
-				box-shadow: 0px 0px 35px #000000;
+				-moz-box-shadow: 0 0 35px #000000db;
+				-webkit-box-shadow: 0 0 35px #000000db;
+				box-shadow: 0px 0px 35px #000000db;
 			}
 			
 			h1 {
@@ -186,9 +186,9 @@
 				text-transform: uppercase;
 				padding: 0px;
 				margin-top: 46px;
-				-moz-box-shadow: 0 0 35px #000000;
-				-webkit-box-shadow: 0 0 35px #000000;
-				box-shadow: 0px 0px 35px #000000;
+				-moz-box-shadow: 0 0 35px #000000db;
+				-webkit-box-shadow: 0 0 35px #000000db;
+				box-shadow: 0px 0px 35px #000000db;
 				border-radius: 5px;
 			}
 			
@@ -315,7 +315,7 @@
 			
 			.content p {
 				display: inline-block;
-				width: 75%;
+				width: 89%;
 				font-size: 36px;
 				margin: 15px;
 				text-align: left;
@@ -347,13 +347,13 @@
 				width: 100%;
 				margin-top: 20px;
 				margin-bottom: 10px;
-				-moz-box-shadow: 0 0 15px #000000;
-				-webkit-box-shadow: 0 0 15px #000000;
-				box-shadow: 0px 0px 15px #000000;
+				-moz-box-shadow: 0 0 15px #000000db;
+				-webkit-box-shadow: 0 0 15px #000000db;
+				box-shadow: 0px 0px 15px #000000db;
 			}
 			
 			.colorBlock.blue {
-				background-color: #1e1e1e;
+				background-color: #0024ff0f;
 				color: #385ea7;
 			}
 			
@@ -390,7 +390,7 @@
 			
 			.loadedData {
 				font-weight: bold;
-				background-color: #b4ff0014;
+				background-color: #b4ff001f;
 				padding: 0px;
 				padding-left: 4px;
 				padding-right: 4px;
@@ -417,7 +417,7 @@
 			
 			.activityType {
 				width: calc(95%-280px);
-				background: #1e1e1e;
+				background: #222222;
 				text-align: left;
 				display: inline-block;
 				margin: 5px;
@@ -427,11 +427,10 @@
 				min-height: 276px;
 				background-repeat: no-repeat;
 				padding-left: 280px;
-				padding-bottom: 25px;
 				margin-bottom: 5px;
-				-moz-box-shadow: 0 0 15px #000000;
-				-webkit-box-shadow: 0 0 15px #000000;
-				box-shadow: 0px 0px 15px #000000;
+				-moz-box-shadow: 0 0 15px #000000db;
+				-webkit-box-shadow: 0 0 15px #000000db;
+				box-shadow: 0px 0px 15px #000000db;
 			}
 			
 			.activityType p {
@@ -447,7 +446,7 @@
 			
 			.furryType {
 				width: 35%;
-				background: #1e1e1e;
+				background: #222222;
 				text-align: left;
 				display: inline-block;
 				margin: 5px;
@@ -459,9 +458,9 @@
 				padding-left: 140px;
 				background-size: 138px 256px;
 				margin-bottom: 25px;
-				-moz-box-shadow: 0 0 15px #000000;
-				-webkit-box-shadow: 0 0 15px #000000;
-				box-shadow: 0px 0px 15px #000000;
+				-moz-box-shadow: 0 0 15px #000000db;
+				-webkit-box-shadow: 0 0 15px #000000db;
+				box-shadow: 0px 0px 15px #000000db;
 			}
 			
 			.furryTypeImage {
@@ -572,7 +571,20 @@
 			
 			.sexAnswer {
 				display: inline-block;
-				width: 25%;
+				width: 341px;
+				background: #1e1e1e;
+				color: #b5b5b5;
+				border: 1px solid #555555;
+				border-radius: 20px;
+				padding: 15px;
+				font-size: 40px;
+				margin: 5px;
+				margin-top: 15px;
+			}
+
+			.sexAnswer2 {
+				display: inline-block;
+				width: 330px;
 				background: #1e1e1e;
 				color: #b5b5b5;
 				border: 1px solid #555555;
@@ -612,9 +624,9 @@
 			
 			.section {
 				background: #1e1e1e;
-				-moz-box-shadow: 0 0 15px #000000;
-				-webkit-box-shadow: 0 0 15px #000000;
-				box-shadow: 0px 0px 15px #000000;
+				-moz-box-shadow: 0 0 15px #000000db;
+				-webkit-box-shadow: 0 0 15px #000000db;
+				box-shadow: 0px 0px 15px #000000db;
 			}
 		</style>
 		<script src="jquery-2.1.1.min.js" type="text/javascript"></script>
@@ -639,10 +651,10 @@
 					});
 					setTimeout(fetchData, 500);
 				});
-			
+
 			function fetchData() {
 				$.ajax({
-					url: "https://www.whatarefurries.com/getData.php",
+					url: "https://furrynedir.net/furrydataowo.php",
 					dataType: "text",
 					success: function(data) {
 						var rows = data.split("\n");
@@ -714,28 +726,27 @@
 		</script>
 		</div>
 		<div class="contentContainer">
-			<div class="anchorContainer"><a class="anchor" id="info">.</a></div>
+			<div class="anchorContainer" style="display: block; height: 1px;"><a class="anchor" id="bilgi">.</a></div>
 			<div style="display: block; height: 15px;"></div>
 			<div class="content">	
-				<div class="definitionWord">fur<span style="font-family: sans-serif">·</span>ry</div><div class="definitionPOS">(isim)</div><div class="definitionText"><a target="_blank" style="color: #777777" href="https://www.merriam-webster.com/dictionary/anthropomorphic">anthropomorfik</a> hayvan karakterlerden hoşlanan kimse.</div>
+				<div class="definitionWord">fur<span style="font-family: sans-serif">·</span>ry</div><div class="definitionPOS">(isim)</div><div class="definitionText"><a target="_blank" style="color: #3c3c3c" href="https://www.merriam-webster.com/dictionary/anthropomorphic">anthropomorfik</a> hayvan karakterlerden hoşlanan kimse.</div>
 				<p>Bu cevap aslında doğru olsada, alabileceğiniz en genelleyici, <span style="font-style: italic">en sıkıcı</span> yanıtlardan biri, ve pekde furryleri açıklamaya yardımcı olduğu söylenemez. </p>
-				<p>Not: Daha Çeviri Yapım Aşamasındadır.</p>
 				<div class="navBarRightSegment">
 				</div>
 				<div>
-					<a href="#info">
+					<a href="#bilgi">
 						<div class="navButton">Furryler Nedİr?<div class="littleNavTex">Bİr Tanıtım</div></div></a>
-					<a href="#types">
+					<a href="#turler">
 						<div class="navButton">Furry TÜrlerİ<div class="littleNavTex">Topluluğa bİr bakıŞ</div></div></a>
-					<a href="#activities">
+					<a href="#aktiviteler">
 						<div class="navButton">Tam Olarak Furryler Ne Yapar?<div class="littleNavTex">Aktİvİteler, hobİler, ve etkİnlİkler</div></div></a>
-					<a href="#sex">
-						<div class="navButton">Cİnsel BİrŞey mİ?<div class="littleNavTex">Topluluğun Yetİşkİn kısmı</div></div></a>
-					<a href="#faq">
+					<a href="#cinsellik">
+						<div class="navButton">Cİnsel Bİr Şey mİ?<div class="littleNavTex">Topluluğun Yetİşkİn kısmı</div></div></a>
+					<a href="#sss">
 						<div class="navButton">Sıkça sorulan sorular<div class="littleNavTex">Dİğer yaygın sorular</div></div></a>
 					<a href="index.html">
-						<div class="navButton">Aydınlık Modu<div class="littleNavTex">owo</div></div></a>
-				</div>
+						<div class="navButton">Gündüz Modu<div class="littleNavTex">owo</div></div></a>
+					</div>
 				<div class="colorBlock blue">
 					<img src="darkimg/rainbow_divider.png">
 					<p><span style="font-weight: bold">Tam olarak</span>, furryler nedir ?</p>
@@ -748,7 +759,7 @@
 				<img src="darkimg/gamer_strip.png">
 				<p>Aynı şekilde kendilerini furry olarak tanımlayan kişilerin çok fazla sebepleri vardır:</p>
 				<img src="darkimg/furry_strip.png">
-				<p>Aslında ,bir bakıma oyuncular gibi, tüm furryler kendi aralarında anlaşayamabilir!</p>
+				<p>Aslında, oyuncular gibi, furryler de kendi aralarında anlaşayamabilirler!</p>
 				<img src="darkimg/gamer_conflict_strip.png">
 				<img src="darkimg/furry_conflict_strip.png">
 				<div class="colorBlock blue">
@@ -769,7 +780,7 @@
 				<p>Ya da belkide kendinizi açıklamak için yol arayan bir furrysinizdir, veya daha önce hiç "furry" kelimesini duymadınız ve ne hakkında, ne olduğunu olduğunu öğrenmek için geldiniz.</p>
 				<div class="colorBlock blue">
 					<img src="darkimg/rainbow_divider.png">
-					<p>Furryleri daha iyi tanımak için, Dünya çapından <span class="furrydata">Furry count</span> furry ile bilgi topladık.</p>
+					<p>Furryleri daha iyi tanımak için, dünya çapından <span class="furrydata">Furry count</span> furry ile birlikte bilgi topladık.</p>
 					<p>Bu bilgiler sayfamızın anketine göre <span class="loadedData">gerçek zamanda</span> güncellenmektedir.</p>
 					<div class="statsNote">
 						<p><span style="font-weight: bold">Önemli Hatırlatma:</span> Bu sayfada toplanan bilgiler sadece furry toplumunun küçük bir parçasını göstermektedir. <span style="font-weight: bold">Güçlü fikirlere</span> ve furry topluluğunda daha fazla bilgisi olan kişilerin ankete katılması daha olasıdır. "Sıradan" kişilerin ankete katılma olasılığı daha azdır.</p>
@@ -780,8 +791,8 @@
 			</div>
 			<div class="content">
 				<h1>Furry Türlerİ</h1>
-				<div class="anchorContainer"><a class="anchor" id="types">.</a></div>
-				<div style="display: block; height: 15px;"></div>
+				<div class="anchorContainer" style="display: block; height: 1px;"><a class="anchor" id="turler">.</a></div>
+				<div style="display: block; height: 30px;"></div>
 				<div class="popularityMeter">
 					<img class="popularityCircle" src="darkimg/typecircles/fantasy.png" style="width: 75px; top: -5px;">
 					<img class="popularityCircle" src="darkimg/typecircles/socializer.png" style="width: 75px; top: -5px;">
@@ -815,72 +826,74 @@
 				<p>Furryleri dahada derinden anlamak için, furry topluluğunda olan kişilerin belirli sebeplerine bakalım.</p>
 				<p>Bu kategorilere tüm kategoriler dahil değildir, ve çoğu furry muhemelen 1'den fazla kategori ile ilgilenmekte.</p>
 				<div style="display: block; height: 20px;"></div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/fantasy.png');">
+				<div class="furryType" style="background-image: url('img/typebadges/fantasy.png');">
 					<p>Anekte katılan furrylerin <span class="furrydata">fantasy</span>'u özellikle fantezi oyunları, filmleri ve kitaplarında bulunan anthropomorfik karakter ve tür düşkünü.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/socializer.png');">
+				<div class="furryType" style="background-image: url('img/typebadges/socializer.png');">
 					<p>Anekte katılan furrylerin <span class="furrydata">socializer</span>'ü furry topluluğunu yeni arkadaş ve sosyalleşme yeri olarak kullanmakta.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/animal lover.png');">
-					<p>Anekte katılan furrylerin<span class="furrydata">animal lover</span>'i hayvanları sevmekte, ve furrylerin yaptığı hayvan çizimlerini beğenmekte.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/animal lover.png');">
+					<p>Anekte katılan furrylerin <span class="furrydata">animal lover</span>'i hayvanları sevmekte, ve furrylerin yaptığı hayvan çizimlerini beğenmekte.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/escapist.png');">
-					<p>Anekte katılan furrylerin<span class="furrydata">escapist</span>'ü furry topluluğunu gerçek dünyadaki sıkıntılarından uzak durmak için kullanmakta.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/escapist.png');">
+					<p>Anekte katılan furrylerin <span class="furrydata">escapist</span>'ü furry topluluğunu gerçek dünyadaki sıkıntılarından uzak durmak için kullanmakta.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/connoisseur.png');">
-					<p>Anekte katılan furrylerin<span class="furrydata">connoisseur</span>'ü kendilerini furry içerikli olmasa bile genel olarak sanat düşkünü olduklarını belirtti.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/connoisseur.png');">
+					<p>Anekte katılan furrylerin <span class="furrydata">connoisseur</span>'ü kendilerini furry içerikli olmasa bile genel olarak sanat düşkünü olduklarını belirtti.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/reinventor.png');">
-					<p>Anekte katılan furrylerin<span class="furrydata">reinventor</span>'i kendilerini daha iyi, yeniden tasarlanmış bir karakter olarak düşlüyor.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/reinventor.png');">
+					<p>Anekte katılan furrylerin <span class="furrydata">reinventor</span>'i kendilerini daha iyi, yeniden tasarlanmış bir karakter olarak düşlüyor.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/actor.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">actor</span>'i kendi furry karakterleri ile rol yapmayı, sohbetlerde veya yazarak yapmayı severler.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/actor.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">actor</span>'i kendi furry karakterleri ile rol yapmayı, sohbetlerde veya yazarak yapmayı severler.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/fandom.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">fandom</span>'si bazı furry maskotları olan spesifik markaların hayranıdırlar.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/fandom.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">fandom</span>'si bazı furry maskotları olan spesifik markaların hayranıdırlar.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/fursuiter.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">fursuiter</span>'i <a target="_blank" href="https://en.wikipedia.org/wiki/Fursuit">fursuitlere</a> ilgi duymakta: furry karakterlerine benzeyen, anthropomorfik hayvan kostümleri.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/fursuiter.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">fursuiter</span>'i <a target="_blank" href="https://en.wikipedia.org/wiki/Fursuit">fursuitlere</a> ilgi duymakta: furry karakterlerine benzeyen, anthropomorfik hayvan kostümleri.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/artist.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">artist</span>'ü kendi çizdikleri, yazdıkları hatta yaptıkları eserleri ile furry topluluğunda bulunmayı seviyor.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/artist.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">artist</span>'ü kendi çizdikleri, yazdıkları hatta yaptıkları eserleri ile furry topluluğunda bulunmayı seviyor.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/dealer.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">dealer</span>'i kendi çizdiği, yazdığı ya da yaptığı eserleri satarak kazanç sağlamakta.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/dealer.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">dealer</span>'i kendi çizdiği, yazdığı ya da yaptığı eserleri satarak kazanç sağlamakta.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/spiritual.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">spiritual</span>'i hayvanlarla ruhani bir birliktelik hissettiklerini belirtti.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/spiritual.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">spiritual</span>'i hayvanlarla ruhani bir birliktelik hissettiklerini belirtti.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/otherkin.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">otherkin</span>'i kendilerini <a target="_blank" href="https://en.wikipedia.org/wiki/Therianthropy#Psychiatric_aspects">therian</a> ya da <a target="_blank" href="https://en.wikipedia.org/wiki/Otherkin">otherkin</a> olarak tanımlarlar: kendilerinin insan vücuduna hapsolmuş bir hayvan olduğuna inananırlar.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/otherkin.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">otherkin</span>'i kendilerini <a target="_blank" href="https://en.wikipedia.org/wiki/Therianthropy#Psychiatric_aspects">therian</a> ya da <a target="_blank" href="https://en.wikipedia.org/wiki/Otherkin">otherkin</a> olarak tanımlarlar: kendilerinin insan vücuduna hapsolmuş bir hayvan olduğuna inananırlar.</p>
 				</div>
-				<div class="furryType" style="background-image: url('darkimg/typebadges/adult.png');">
-					<p>Ankete katılan furrylerin<span class="furrydata">adult</span>'u furry fandomda <a href="#sex">cinsel aktivitelerde</a> yeralmaktan hoşlandığını belirttiler. Genellikle bu tartışmaya açık bir konudur.</p>
+				<div class="furryType" style="background-image: url('img/typebadges/adult.png');">
+					<p>Ankete katılan furrylerin <span class="furrydata">adult</span>'u furry fandomda <a href="#cinsellik">cinsel aktivitelerde</a> yeralmaktan hoşlandığını belirttiler. Genellikle bu tartışmaya açık bir konudur.</p>
 				</div>
 			</div>
 
 			<div class="content">
 				<h1>Tam olarak furryler <span style="font-style: italic;">ne </span> yapar?</h1>
-				<div class="anchorContainer"><a class="anchor" id="activities">.</a></div>
-				<p>Bu genellikle <a href="#types">furrylerin türüne</a> göre değişiklik gösterir, ama konuşmaya değer bazı yaygın cevaplarda vardır.</p>
+				<div class="anchorContainer" style="display: block; height: 1px;"><a class="anchor" id="aktiviteler">.</a></div>
+				<p>Bu genellikle <a href="#turler">furrylerin türüne</a> göre değişiklik gösterir, ama konuşmaya değer bazı yaygın cevaplarda vardır.</p>
 				<p>Tabikide, tüm furrylerin yaptıkları burda listelenmedi.</p>
-				<p>Eğer bu sayfadan öğrenmek gereken birşey varsa, <span style="font-weight: bold">o da tüm furrylerin aynı olmadıklarıdır.</span>. Birisinin eğlenceli bulduğunu, bir diğeri sıkıcı ya da saçma bulabilir.</p>
-				<div style="display: block; height: 40px;"></div>
-				<div class="anchorContainer"><a class="anchor" id="mainstreamMedia">.</a></div>
-				<div class="activityType" style="background-image: url('darkimg/activities/mainstream media.png');">
+				<p>Eğer bu sayfadan öğrenmek gereken birşey varsa, <span style="font-weight: bold">o da tüm furrylerin aynı olmadıklarıdır</span>. Birisinin eğlenceli bulduğunu, bir diğeri sıkıcı ya da saçma bulabilir.</p>
+				<div class="anchorContainer" style="display: block; height: 1px;"></div>
+
+				<div class="activityType" style="background-image: url('darkimg/activities/mainstream media.png');"><a class="anchor" id="mainstreamMedia"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
 					<h4>Anthropomorfik karakterlerin olduğu medyalardan hoşlanırlar</h4>
-					<p>Ankete katılan furrylerin<span class="furrydata">activity: mainstream media</span>'u konuşan havyvan karaklerlerinin veya anthropomorfik fantezi türlerinin bulunduğu medyalardan hoşlandıklarını belirtti.</p>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: mainstream media</span>'u konuşan havyvan karaklerlerinin veya anthropomorfik fantezi türlerinin bulunduğu medyalardan hoşlandıklarını belirtti.</p>
 					<p>Çoğunlukla bu, kişilerin furry topluluğu ile ilgilenmesini sağlamakta.</p>
 					<p>Anthropomorfik karakterlere yer veren çok fazla  film, televizyon dizileri, video oyunları ve kitaplar bulunmaktadır, ve bunlardan hoşlanmakta furrylerin en yaygın özelliklerinden biridir.</p>
 					<p>Tabii ki, bu şeyleri beğenmek içim furry olmaya gerek yoktur!</p>
 					<p>Sonuçta, Star Trek sevmeniz için kendinize "trekkie" demeniz gerek yoktur. Bu sadece ne kadar Star Trek sevdiğinizi gösterir.</p>
 					<p>Furryler ilk başta genellikle büyük animasyon, film(Lion King, Zootopia, My Little Pony, vb.), hayvan karakterli video oyunları(Starfox, Sly Cooper, Sonic, vb.), ya da anthropomorfik tür ve karakter içerenfantezi serileri(Dungeons & Dragons, Redwall, Chronicles of Narnia, vb.) hayranı olan kişiler olarak başlarlar.</p>
+					<div class="anchorContainer" style="display: block; height: 15px;"></div>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/furry media.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/furry media.png');"><a class="anchor" id="furryMedia"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
 					<h4>Diğer furryler tarafından yapılan resimlere göz atarlar </h4>
-					<p>Ankete katılan furrylerin<span class="furrydata">activity: furry media</span>'i <a href="http://www.furaffinity.net/">FurAffinity</a> gibi siteleri furry çizimlerine, yazılarına vs. bakmak için kullandıklarını belirttiler.</p>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: furry media</span>'i <a href="http://www.furaffinity.net/">FurAffinity</a> gibi siteleri furry çizimlerine, yazılarına vs. bakmak için kullandıklarını belirttiler.</p>
 					<p>Nihayetinde, çoğu furryler yalnız olmadıklarını; anthropomorfik karakterleri onlar kadar seven bir topluluk olduğunu, farklı geçmişleri olsa bile aynı ortak birşeyleri paylaşırlar.</p>
 					<p>Birisi furry topluluğunu keşfettiğinde, ilk yaptıkları şey genellikle furry çizimlerine, yazılarına, animasyonlarına ve birçok şeylere göz atmaya başlarlar.</p>
 					<p>Furrylerin uzaktanda olsa buluşmalarını, aynı ortak ilgi alanlarını paylaşmalarını, yaptığı çizimleri,hikayeleri paylaşmalarına yardımcı olacak siteler kurulmuştur. En büyüklerinden birkaç örnek olarak:</p>
@@ -889,328 +902,360 @@
 						<li><a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a>; <a href="http://www.reddit.com">Reddit</a>'in bir parçası olan "/r/Furry" topluluğu, <span style="font-style: italic;">herhangi</span> bir konu uzerine forum açabilecekleri devasa bir websitesidir. "/r/Furry" topluluğunda yetişkin içerikler izin verilmemekte ama sanatsal çıplaklığa izin verilmektedir.</li>
 						<li><a target="_blank" href="http://www.deviantart.com/">DeviantArt</a>; Ana olarak sanatsal paylaşımlar yapılan bu websitesi furryler için özellikle oluşturulmamıştır, ama büyük bir kısmını furry çizimleri oluşturmaktadır, yinede çoğu furry çizeri DevianArt'ı Furaffinity'e sıkı yetişkin içerik politikası nedeniyle daha çok tercih etmektedir.</li>
 					</ul>
-					<p></p>
+					<p></p> <!--this is here for a reason uwu (adds a smol block)-->
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/socialize.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/socialize.png');"><a class="anchor" id="socialize"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
 					<h4>Diğer furrylerle sosyalleşirler</h4>
-					<p>Ankete katılan furrylerin<span class="furrydata">activity: socialize</span>'i furry topluluğunu yeni arkadaş ve sosyaleşme amacıyla kullanmaktadır.</p>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: socialize</span>'i furry topluluğunu yeni arkadaş ve sosyaleşme amacıyla kullanmaktadır.</p>
 					<p>Furryler, genel bir kural olarak, arkadaş canlısıdır. Her topluluktada görülebileceği üzere, furry topluluğun tuhaflığı olabilmekte, ama çoğu furry nihayetinde yeni arkadaşlar bulmaya ve birlikte zaman geçirmeye başlarlar. Sosyalleşmeler çoğunlukla sohbet odalarında, internetten oyun oynayarak ya da sesli olarak sohbet ederek gerçekleşir </p>
 					<p>Bazen, furryler kendi favori furry karakterleri, çizimleri veya filmleri üzerine konuşurlar. Ama çoğunlukla furryler kimseden bir farkı olmadan sıradan gündelik konuları konuşurlar. Oyunlar, dünya/ülke gündemi, başlarına gelen acı/tatlı olayları anlatırlar. Unutulmamalıdır ki,furrylerin genellikle hakkında düşünülen bir konu olarak, kimse aynı bir konu üzerine herzaman konuşmaz. Bir zamandan sonra sürekli konuşulan konu bozmaya, sıkılmaya, artık ilgi çekici bir halden çıkmaya başlar.</p>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/fursona.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/fursona.png');"><a class="anchor" id="fursona"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
 					<h4>Kendileri için furry karakterleri oluştururlar</h4>
-					<p>Ankete katılan furrylerin<span class="furrydata">activity: fursona</span>'ü kendilerine ait bir furry karakter oluşturduklarını belirtti.</p>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: fursona</span>'ü kendilerine ait bir furry karakter oluşturduklarını belirtti.</p>
 					<p>Birisi furry topluluğu ile ilgilenmeye başlayınca, bir zamandan sonra kendilerine furry karakter oluştururlar. Bu karaklerler,çoğunlukla "fursona" denir, farklı kişilere farklı şeyler ifade eder.</p>
 					<p>Çoğu furryler için, kendi karakterlerini benimserler. Tam olarak kendilerini anımsatmasada, diğer furrylerle takılırkenki kişilikleri havalı duran bir karaktere dönüşür.</p>
 					<p>Diğer furryler için ise, kendi karakterleri sadece o kadardır, kitapta ya da filmde bulabileceğiniz bir karakter gibi. Kendilerini temsil etmesede, diğer furrlerle rol yaparken kullanırlar. Çoğu kişilere göre <span style="font-style: italic">birden fazla</span>, her birinin farklı kişilik ve dış görünüşlerinin olduğu karakterlere sahip olmak yaygındır.</p>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/roleplay.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/roleplay.png');"><a class="anchor" id="roleplay"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
 					<h4>Kendi karakterleri olarak rol yapma oyunu oynarlar</h4>
-					<p>Ankete katılan furrylerin<span class="furrydata">activity: roleplay</span>'sı kendi karakterleri olarak rol yapma oyunlarına katıldıklarını belirtti. Bu aktivite, furrylerin bir kısmı için furryliğin ana unsurunu oluştururken, diğerleri için utanç verici, sıkıcı veya sinir bozucu bulurlar.</p>
-					<p>Bazı furry gruplarında, kendi karakterleri olarak uzun süreliğine sohbet etmek yaygındır. Bu furrylere göre, her etkileşim ve konuşmalar kendi karakterlerinin davranışları ve kişiliklerini keşfetmek için bir fırsattır. Bu genellikle kendi karakterlerini diğer yakındaki karakterlerle etkileşimde bulunmak isteyen "<a href="#types">aktör</a>" furrylerin arasında yaygındır.</p>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: roleplay</span>'sı kendi karakterleri olarak rol yapma oyunlarına katıldıklarını belirtti. Bu aktivite, furrylerin bir kısmı için furryliğin ana unsurunu oluştururken, diğerleri için utanç verici, sıkıcı veya sinir bozucu bulurlar.</p>
+					<p>Bazı furry gruplarında, kendi karakterleri olarak uzun süreliğine sohbet etmek yaygındır. Bu furrylere göre, her etkileşim ve konuşmalar kendi karakterlerinin davranışları ve kişiliklerini keşfetmek için bir fırsattır. Bu genellikle kendi karakterlerini diğer yakındaki karakterlerle etkileşimde bulunmak isteyen "<a href="#turler">aktör</a>" furrylerin arasında yaygındır.</p>
 					<p>Diğer bazı gruplarda ise, rol yapmak utanç verici olarak gözükmektedir ve, rol yapan furryleri furry toplumuna zarar verdiğini düşünmektedirler. Bu furryler, rol yapan furrylerin iki sebepten zarar gördüğünü düşünürler: gerçek karakter tasarımından yoksun olduğundan genellikle çocuksudur,ve genellikle rol yapma flörtleşmeye dönüşür. </p>
-					<p>Hatta rol yapmayan furrler bile, bazı kişilerin karakteri hakkında alay etmesi olağandışı değildir. Furry topluluğunda çok fazla klişeler vardır, ve bazı klişeler ise furrylerin tartışmalarına konu olur. Örnek olarak, tilki karakteri olan furryler genellikle </p>
+					<p>Hatta rol yapmayan furrler bile, bazı kişilerin karakteri hakkında alay etmesi olağandışı değildir. Furry topluluğunda çok fazla klişeler vardır, ve bazı klişeler ise furrylerin tartışmalarına konu olur. Örnek olarak, tilki karakteri olan furryler genellikle gelişigüzel görülür, ve furryler ilişki meselelerini konuşurken, muhtemelen ilk ilişkisi "tilki ile sevgili" olarak başladığından alay edebilir.</p>
+					<div class="anchorContainer" style="display: block; height: 15px;"></div>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/art.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/art.png');"><a class="anchor" id="create"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
-					<h4>Draw, write, or exercise their creativity</h4>
-					<p><span class="furrydata">activity: art</span> of surveyed furries have drawn furry artwork, written furry stories, or created other furry media.</p>
-					<p>Because furry characters exist only in fantasy, many furries pour an exhausting amount of effort into realizing their characters through art and writing. Not all furries have artistic talent, but because the community is very art-focused, furries are often encouraged to exercise their creativity.</p>
-					<p>Even furries who do not draw or write on a regular basis will often try their hand at art in order to design a character for themselves. Because the furry community is overwhelmingly inviting, art of <span style="font-style: italic">any</span> quality usually receives a positive reaction, and this positive reinforcement often encourages the artist to keep practicing.</p>
-					<p>Many furries enter the community with no artistic background, and eventually develop a modicum of talent and confidence that they can put to use elsewhere in their lives.</p>
+					<h4>Çizim yapar, yazı yazar veya hayal güçlerini geliştirirler</h4>
+					<p>Ankete katılan furrlerin <span class="furrydata">activity: art</span>'i furry çizimi yaptıklarını, furry temalı hikayeler yazdıklarını belirttiler.</p>
+					<p>Sadece fantezilerde furry karakterleri bulunduğundan, çoğu furry kendi karakterlerinin çizimi ve hikayelerine baya emek sarf ederler. Tüm furrylerde sanat yeteneği bulunmaz, ama topluluk çizimler üzerine odaklandığından, furryler hayal gücünü geliştirmeye cesaretlidir.</p>
+					<p>Hatta normalde çizim yapmayan furryler bile bazen kendi karakterlerini tasarlamak için kendilerini çizimlerde denerler. Furry topluluğu çokça arkadaş canlsı olduğundan, çizimlerin <span style="font-style: italic">çoğu</span> genellikle olumlu eleştiriler alır, ve bu iyi eleştiriler sayesinde de çizerler daha çok çizim yapmaya cesaretlendirir.</p>
+					<p>Topluluğa yeni giren hiçbir çizerlik yanı olmayan furryler bile, hayatlarının başka yerlerinde kullanabilecekleri bir nebze yetenek ve güven geliştirirler.</p>
+					<div class="anchorContainer" style="display: block; height: 15px;"></div>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/commission.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/commission.png');"><a class="anchor" id="commissions"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
-					<h4>Commission custom artwork of their character</h4>
-					<p><span class="furrydata">activity: commission</span> of surveyed furries have purchased custom furry artwork, stories, or other media for themselves.</p>
-					<p>Whether a furry has artistic talent or not, they will often be impressed or inspired by the talent and style of artists around them. Eventually, many furries will pay another artist to draw or write about their character for them.</p>
-					<p>For many furries, seeing their character realized by someone else is much more exciting than drawing it themselves. This is especially true for <a href="#types">actors</a> and <a href="#types">reinventors</a>, as well as <a href="#types">socializers</a> who use their character's popularity to make new friends.</p>
-					<p>Other furries, particularly <a href="#types">fandom</a> and <a href="#types">fantasy</a> furries, will pay to have their characters drawn with popular characters from mainstream media, or as part of existing fantasy universes. For these furries, artwork is less about popularity and more about expression and storytelling.</p>
-					<p>Like most entertainment and luxury industries, the furry artwork industry is one where a small minority of users spends a disproportionately high amount of money. These furries often become popular simply because of the sheer volume or quality of art they've commissioned, as their characters become recognized as sort of a "furry celebrity." (occasionally called a "popufur")</p>
+					<h4>Kendi karakterleri için özel komisyon alırlar</h4>
+					<p>Ankete katılarn furrylerin <span class="furrydata">activity: commission</span>'i kendi karakterleri için çizim, hikaye ve diğer çeşitli şeyler aldılar.</p>
+					<p>Bir furrynin çizerlik yanı olsun olmasın, etrafındaki başka çizerlerin çizim yeteneklerinden etkilenirler. Nihayetinde, çoğu furry başka çizerlerden kendi karakterleri için çizim ya da hikaye yapmaları için komisyon alır.</p>
+					<p>Çoğu furry için, başka bir furry tarafından kendi karakterlerinin tanınması onlar için heyecan vericidir. Bu daha çok, kendi karakterinin popülerliğini yeni arkadaş edinmek için kullananlar, <a href="#turler">aktör</a> ve <a href="#turler">karakter muciti</a>, hatta <a href="#turler">sosyalleşmek</a> isteyen furryler için daha doğrudur.</p>
+					<p>Diğer furryler, özellikle de <a href="#turler">fandomdaki</a> ve <a href="#turler">fanteziye</a> ilgi duyan furryler, kendi karakterlerini başka çeşitli medyalardan ünlü karakterle birlikte çizdirmek için komisyon alırlar. Bu furryler için, çizimler popülerlik için değil daha çok hikaye anlatımı için önemlidir.</p>
+					<p>Çoğu eğlence ve lüks endüstrileri gibi, furry çizim endüstrisinin de küçük bir kısımı, orantısız ve büyük oranda paralar harcarlar. Bu furryler çok fazla satın aldıkları kaliteli çizimlerden dolayı kolayca popüler olurler, ve karakterleri bir çeşit "ünlü furry" haline gelir. (bazen ise "popufur" olarak adlandırılırlar).</p>
+					<div class="anchorContainer" style="display: block; height: 15px;"></div>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/local meetup.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/local meetup.png');"><a class="anchor" id="hangouts"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
-					<h4>Go to local hangouts with other furries</h4>
-					<p><span class="furrydata">activity: local meetup</span> of surveyed furries have gone to a small, local meetup with other furries.</p>
-					<p>Local meetups allow small groups of furries to meet up for group activities. Common activities include charity events, cookouts, camping, gaming, bowling, movies, or holiday parties. Meetup attendance varies tremendously - some meetups host just a handful of local furries, while others attract hundreds of furries.</p>
-					<p>Sometimes, furries are allowed and encouraged to wear their fursuits during these activities (if they own a fursuit - only about <span class="furrydata">activity: owned fursuit</span> of furries do). Other times, especially when meeting in a public, shared space that has not been reserved for the meetup, furries will be asked not to suit.</p>
-					<p>Local meets are usually hosted and managed by a local furry community, or by individual furries with wide social circles who are very active in their area.</p>
+					<h4>Diğer furrylerle buluşurlar</h4>
+					<p>Ankete katılan furrylerlin <span class="furrydata">activity: local meetup</span>'i küçük furry buluşmalarına katıldığıını belirtti.</p>
+					<p>Ufak buluşmalar düzenleyerek küçük furry grupları birlikte grup aktiviteleri yapar. Bu grup aktiviteleri çoğunlukla hayır kurumu için para toplamak, kamp yapmak, oyun oynamak, film izlemek ya da hafta snu partilerini içerir. Buluşmalara katılım farklılık gösterebiliyor. Bazı buluşmalara birkaç kişi gelirken bazı buluşmalara ise yüzlerce furry katılmakta.</p>
+					<p>Bazen, furryler aktivite yaparken fursuit giyebilirler (eğer fursuitleri varsa, ki sadece furrylerin <span class="furrydata">activity: owned fursuit</span>'ü bir fursuite sahip.) Başka zamanlarda, özelliklede halka açık, sadece furrylere ait olmayan buluşmalarda furrylerin fursuitlerini çıkarmaları istenir.</p>
+					<p>Buluşmalar genellikle ordaki furry topluluğu, ya da orada aktif olarak yaşayan sosyal çevresi geniş olan furryler tarafından bireysel olarak düzenlenir.</p>
+					<div class="anchorContainer" style="display: block; height: 15px;"></div>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/convention.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/convention.png');"><a class="anchor" id="conventions"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
-					<h4>Go to furry conventions</h4>
-					<p><span class="furrydata">activity: convention</span> of surveyed furries have gone to a furry convention.</p>
-					<p>Furry conventions are large gatherings of furries from all across the country - or even the world - who meet up for a few days to socialize, buy and sell furry artwork and merchandise, wear and watch fursuits, and - most importantly - meet friends that they've made through the furry community.</p>
-					<p>Furry conventions are especially important for <a href="#types">socializers</a>, who may only be able to see their online furry friends at conventions for a few days each year, and for <a href="#types">fursuiters</a>, who often spend a tremendous portion of the convention fursuiting and participating in fursuit-specific activities like fursuit games, fursuit talent/dance competitions, or fursuit panels.</p>
-					<p>For furries who are <span style="font-style: italic">particularly</span> active in the <a href="#sex">adult</a> side of the fandom, or for furries who have formed long-distance relationships through the furry community, conventions are also an opportunity to engage physically with other furries. Because these windows of opportunity are so short and sparse, many furries (<span class="furrydata">con reason: sex</span>) list sex as <span style="font-style: italic;">one</span> of the reasons they attend furry conventions, leading many to believe that furry conventions are sex-centric events.</p>
-					<p>In reality, only <span class="furrydata">con main reason: sex</span> of surveyed furries say that sex is one of the main reasons they attend furry conventions, and only <span class="furrydata">con main reason: casual sex</span> attend furry conventions specifically looking for casual sex.</p>
-					<p>Some of the most common reason furries attend furry conventions include:</p>
+					<h4>Furry fuarlarına katılırlar</h4>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: convention</span>'ü furry fuarlarına katıldığını belirtti.</p>
+					<p>Furry fuarlarıtüm ülkedeki, hatta dünyadaki furrylerin birkaç günlüğüne sosyalleşmeleri, furry sanat eserlerini alıp satmaları, fursuit giymeleri, ve en önemli olarak furry topluluğunda arkadaş edindikleri kişileri görme fırsatı için bir arada toplanmasını sağlar.</p>
+					<p>Furry fuarları sadece internetten furry arkadaşları ile sohbet eden kişilerin birkaç günlüğüne furry fuarına gelmesi <a href="#turler">sosyalleşmeyi</a> seven furryler için önemlidir, ve zamanının çoğunu fursuit giyerek, fursuitle aktiviteler (fursuit oyunları, fursuit yetenek/dans yarışmaları) yaparak geçiren <a href="#turler">fursuitçiler</a> için de önemlidir.</p>
+					<p>Furry toplumunun <span style="font-style: italic">özelliklede</span> <a href="#cinsellik">yetişkin</a> kısmında aktif olanlar, ya da furry topluluğunda uzak ilişkiye sahip olan furryler için furry fuarları fiziksel olarak buluşmalarını sağlar. Bu fırsatlar nadiren gerçekleştiğinden, çoğu furry (<span class="furrydata">con reason: sex</span>) cinsel aktiviteleri furry fuarına katılma sebeplerinden <span style="font-style: italic;">biri</span> olarak belirtmekte, çoğu kişinin furry fuarlarının cinsel birşey olduğunu düşünmesine yol açmaktadır.</p>
+					<p>Aslında, ankete katılan furrylerin sadece <span class="furrydata">con main reason: sex</span>'i sadece furry fuarına cinsel aktiviteler için gittiğini belirtti, ve sadece ankete katılan furrylerin <span class="furrydata">con main reason: casual sex</span>'ü cinsel ilişkiye girmek için furry fuarına gittiğini söyledi.</p>
+					<p>Furrylerin, furry fuarına katılma sebeplerinin bazıları:</p>
 					<ul>
-						<li><span class="furrydata">con reason: meet existing friends</span>: To meet existing friends</li>
-						<li><span class="furrydata">con reason: make new friends</span>: To make new friends</li>
-						<li><span class="furrydata">con reason: watch fursuits</span>: To watch fursuiters</li>
-						<li><span class="furrydata">con reason: room parties</span>: To attend small room parties</li>
-						<li><span class="furrydata">con reason: buy</span>: To buy furry art and merchandise</li>
+						<li><span class="furrydata">con reason: meet existing friends</span>: Arkadaşlarıyla buluşmak,</li>
+						<li><span class="furrydata">con reason: make new friends</span>:  Yeni arkadaş edinmek,</li>
+						<li><span class="furrydata">con reason: watch fursuits</span>: Fursuitçileri izlemek,</li>
+						<li><span class="furrydata">con reason: room parties</span>: Küçük oda partilerine katılmak,</li>
+						<li><span class="furrydata">con reason: buy</span>: Furry çizim ve sanat çalışmalarından satın almak.</li>
 					</ul>
+					<p>...gibi aktiviteleri içermektedir.</p>
 				<div style="display: block; height: 25px;"></div>
 				</div>
-				<div class="activityType" style="background-image: url('darkimg/activities/worn fursuit.png');">
+
+				<div class="activityType" style="background-image: url('darkimg/activities/worn fursuit.png');"><a class="anchor" id="fursuit"></a>
 					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
 					<h4>Fursuit</h4>
-					<p>Fursuits are one of the first things people think of when they think about furries, despite the fact that only <span class="furrydata">activity: worn fursuit</span> of surveyed furries have worn a fursuit, and only <span class="furrydata">activity: owned fursuit</span> actually own one.</p>
-					<p>The fursuiting community is almost as diverse as the furry community itself, and people fursuit for many reasons:</p>
+					<p>Fursuitler, insanların aklına furry diyince ilk gelen fikirlerden birisidir. Ama, aslında ankete katılan furrylerin sadece <span class="furrydata">activity: worn fursuit</span>'i fursuit giymiş, ve sadece <span class="furrydata">activity: owned fursuit</span>'ü bir fursuite sahip.</p>
+					<p>Fursuitçi topluluğu furry topluluğu kadar çeşitlidir, ve bir fursuite sahip olmak için birçok sebep vardır:</p>
 					<div class="barGraph">
 						<div class="barGraphLine">
-							<div class="barGraphLabel">To feel more comfortable expressing themselves</div>
-							<div class="barGraphBar unloadedBarGraphBar">fursuit score: comfort</div>
+							<div class="barGraphLabel">Kendilerini daha rahat ifade edebilmek için</div>
+							<div class="barGraphBar unloadedBarGraphBar" style="width: 28.5827%;">fursuit score: comfort</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">To socialize with other fursuiters and furries</div>
-							<div class="barGraphBar unloadedBarGraphBar">fursuit score: socialize</div>
+							<div class="barGraphLabel">Diğer furryler ve fursuitçiler ile sosyalleşmek için</div>
+							<div class="barGraphBar unloadedBarGraphBar" style="width: 28.1143%;">fursuit score: socialize</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">To escape from the worries of the world and have fun</div>
-							<div class="barGraphBar unloadedBarGraphBar">fursuit score: escape</div>
+							<div class="barGraphLabel">Dünya sıkıntılarından uzaklaşıp eğlenmek için</div>
+							<div class="barGraphBar unloadedBarGraphBar" style="width: 35%;">fursuit score: escape</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">To make people happy by acting cute or funny</div>
-							<div class="barGraphBar unloadedBarGraphBar">fursuit score: perform</div>
+							<div class="barGraphLabel">Şirin ve komik davranarak insanları mutlu etmek için</div>
+							<div class="barGraphBar unloadedBarGraphBar" style="width: 31.262%;">fursuit score: perform</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">To feel more like their characters</div>
-							<div class="barGraphBar unloadedBarGraphBar">fursuit score: character</div>
+							<div class="barGraphLabel">Daha çok kendi karakteri gibi davranabilmek için</div>
+							<div class="barGraphBar unloadedBarGraphBar" style="width: 31.2246%;">fursuit score: character</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">They like wearing costumes and masks in general</div>
+							<div class="barGraphLabel">Genelde kostüm ve maske giymeyi sevdikleri için</div>
 							<div class="barGraphBar unloadedBarGraphBar">fursuit score: costume</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">They like giving hugs to make people feel good</div>
+							<div class="barGraphLabel">İnsanlara sarılarak kendilerini iyi hissetmelerini sağlamak için</div>
 							<div class="barGraphBar unloadedBarGraphBar">fursuit score: hugs</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">Adult reasons</div>
+							<div class="barGraphLabel">Yetişkin sebepler için</div>
 							<div class="barGraphBar unloadedBarGraphBar">fursuit score: adult</div>
 						</div>
 						<div class="barGraphLine">
-							<div class="barGraphLabel">To show appreciation for a specific franchise</div>
+							<div class="barGraphLabel">Bazı markalara değer verdiğini göstermek için</div>
 							<div class="barGraphBar unloadedBarGraphBar">fursuit score: franchise</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="activityType" style="background-image: url('darkimg/activities/paid.png');">
-					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
-					<h4>Sell art, writing, games, or other merchandise / services</h4>
-					<p><span class="furrydata">activity: paid</span> of surveyed furries make money by selling their furry artwork, stories, or other goods and services.</p>
-					<p>Like any other community, there are many ways for savvy artists, writers, animators, and other creative enterpreneurs to profit from the furry community. Some of these profiteers are furries doing services for other furries, while others are talented outsiders looking at ways to engage the relatively-untapped market.</p>
-					<p>Some of the most common revenue streams in the furry community include:</p>
+					<img src="darkimg/rainbow_divider.png" class="rainbowTop"><a class="anchor" id="sell"></a>
+					<h4>Çizimler, hikayeler, oyunlar, veya başka eşyalar satmak</h4>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: paid</span>'i furry sanat eserleri, hikayeleri, ve diğer şeyleri satarak kazanç elde ettiğini belirtti.</p>
+					<p>Diğer topluluklarda da olduğu gibi, çizerler, yazarlar animatörler, ve diğer girişimcilerin furry topluluğu üzerinden kazanç etme yol vardır. Bazı kazanç sağlayan furryler diğer furryler için bir hizmet sağlamakta, diğer yetenekli kişiler ise başka yollardan kazanç sağlama peşinde.</p>
+					<p>Furry topluluğunda yaygın olan bazı kazanç sağlama yolları ise:</p>
 					<ul>
-						<li><span style="font-weight: bold">Custom art/writing commissions:</span> Furries will often pay artists and writers to create custom art/literature about their character. Over time, many artists have transitioned away from this model to the YCH model, described below.</li>
-						<li><span style="font-weight: bold">"Your Character Here" (YCH) auctions:</span> Rather than creating custom artwork from scratch, some artists will sketch out a scene or picture that they want to draw, then allow furries to bid to have their characters used in the final picture. While some furries dislike the lack of control offered by YCH auctions, others appreciate that the artists have a stronger creative say in the final piece.</li>
-						<li><span style="font-weight: bold">Paywalled content:</span> Once an artist has amassed a sizeable following, they may begin to paywall some of their content, requiring viewers to pay a monthly fee (often using a service like <a target="_blank" href="http://patreon.com/">Patreon</a>) in order to view it. This model is especially popular among adult artists, who will commonly post censored, clothed, or low-resolution versions of their art in a free gallery, then offer their supporters high-resolution, uncensored versions.</li>
-						<li><span style="font-weight: bold">Donations / soft paywalls:</span> Some artists choose not to hide their content behind a paywall, instead relying on the generosity of their audience to keep them afloat. The rise of <a target="_blank" href="http://patreon.com/">Patreon</a> as a crowdfunding service has a played an important role in this business model, as it effectively allows an artist/creator to create whatever they like, and allows their audience to support them on a regular, predictable basis, so long as the artist keeps producing content they enjoy. Some artists will also offer special perks to people who support them, like the ability to vote on upcoming projects, or sneak previews of things they're working on.</li>
+						<li><span style="font-weight: bold">Özel çizim/hikaye komisyonları:</span> Furryler çoğunlukla çizerlere ve yazarlara özel çizim/hikayeler yapmaları için para öderler. İleriki zamanlarda, çoğu çizer bu modeli, aşşağıdada belirtildiği gibi "Your Character Here (Senin Karakterin Buraya)" (YCHS) modeli ile değiştirmiştir.</li>
+						<li><span style="font-weight: bold">"Your Character Here (Senin Karakterin Buraya)" (YCH) satın alımları:</span> Sil baştan bir çizim yapmak yerine, bazı çizerler önce bir manzara/resim çizip, belirli yerlerini insanların kendi karakterleri ile çizilebileceği kısımlar ayarlarlar. Bazı furryler çizimdeki oynama özgürlüğünden şikayet etse de, bazıları ise çizerlerin çizimlerinde daha büyük söz sahibi olduğunu savunurlar</li>
+						<li><span style="font-weight: bold">Sürekli ödemeli içerikler:</span> Çizerler büyük bir takipçiye ulaştıklarında, bazı içeriklerini sürekli ödemeli olarak yayımlayabilirler. İçeriği görmek isteyenler ise ayda bir ödemeli sisteme sahip (çoğunlukla <a target="_blank" href="https://patreon.com/">Patreon</a> gibi) yerlere bir miktar para ödemeleri gerekmektedir. Bu sistem daha çok yetişkin içerikli çizerler arasında yaygındır. Genellikle belirli bir parayı kişiler daha yüksek kalitede, ya da sansürsüz bir şekilde görmek için ödeme yaparlar.</li>
+						<li><span style="font-weight: bold">Bağışlar:</span> Bazı çizerler içeriklerinin bazılarını sürekli ödemeli sistem ile herkesden gizlememeyi, onun yerine kitlesinin cömertliğine dayanır. Özelliklede <a target="_blank" href="http://patreon.com/">Patreon</a> gibi sitelerin popülerleşmesi ile birlikte, bu sistem üzerinde önemli rol oynamakta, ve etkili olarak çizerlerin istedikleri eserleri yapmalarını sağlamakta.</li>
 					</ul>
+					<div class="anchorContainer" style="display: block; height: 15px;"></div>
 				</div>
+
 				<div class="activityType" style="background-image: url('darkimg/activities/viewed adult content.png');">
-					<img src="darkimg/rainbow_divider.png" class="rainbowTop">
-					<h4>Adult things</h4>
-					<p><span class="furrydata">activity: viewed adult content</span> of surveyed furries look at adult furry content.</p>
-					<p>Sex is a very divisive subject, for furries. Some furries (<span class="furrydata">sex: yes</span>) believe that the fandom is <span style="font-style: italic">primarily</span> about sex, while others (<span class="furrydata">sex: no</span>) believe that sex has no place in the fandom.</p>
-					<p>The vast majority (<span class="furrydata">sex: can be</span>) of furries, however, believe that <span style="font-weight: bold">the community is not inherently <span style="font-style: italic">about</span> sex, but that sex <span style="font-style: italic">can</span> be brought into it.</span></p>
-					<p>Sure enough, most of the community (<span class="furrydata">activity: viewed adult content</span>) has intentionally viewed adult furry content. It's hard to determine how this number compares to the general public's rate of pornography consumption, but it's safe to say that most furries enjoy furry pornography, just as most non-furries enjoy regular pornography.</p>
-					<p>Because this is a big topic in the furry community, we've given it its own <a href="#sex">section</a>, below.</p>
+					<img src="darkimg/rainbow_divider.png" class="rainbowTop"><a class="anchor" id="adultActivities"></a>
+					<h4>Yetişkin şeyler</h4>
+					<p>Ankete katılan furrylerin <span class="furrydata">activity: viewed adult content</span>'si yetişkin furry içeriklerine baktığını belirtti.</p>
+					<p>Cinsey şeyler çok anlaşmazlık çıkaran konulardan biridir. Bazı furryler (<span class="furrydata">statsex: yes</span>) furry fandomunu <span style="font-style: italic">ana olarak</span> cinsel şeyler üzerine olduğunu düşünürken, diğerleri ise (<span class="furrydata">statsex: no</span>) furry topluluğunda yerinin olmadığını söylüyor.</p>
+					<p>Büyük çoğunluk ise (<span class="furrydata">statsex: can be</span>), furry topluluğunun <span style="font-weight: bold"><span style="font-style: italic">tamamen</span> cinsellik üzerine olmadığını, ama <span style="font-style: italic">içerebileceğini de</span></span> belirtti.</p>
+					<p>Elbette, topluluğun çoğunluğu (<span class="furrydata">activity: viewed adult content</span>) kendi isteği ile yetişkin furry içeriğine baktığını belirtti. Genel olarak insanların ne kadar pornografik içeriklere baktığını bilmek zordur, ama çoğu furryin yetişkin furry içeriklerini, furry olmayan kişilerin diğer pornografik içeriklere bakmayı sevdiği kadar sevdiklerini söyleyebiliriz.</p>
+					<p>Furry topluluğunda büyük bir konu olduğundan, kendi <a href="#cinsellik">kategorisine</a> ayırdık.</p>
+					<div class="anchorContainer" style="display: block; height: 15px;"></div>
 				</div>
 			</div>
-			
+
 			<div class="content">
-				<h1>Is it a sex thing?</h1>
-				<div class="anchorContainer"><a class="anchor" id="sex">.</a></div>
+				<h1>Cİnsel Bİr şey mİ?</h1>
+				<div class="anchorContainer" style="display: block; height: 1px;"><a class="anchor" id="cinsellik">.</a></div>
 				<div style="display: block; height: 15px;"></div>
 				<div class="sexAnswerFurryBox" id="sexAnswer2"></div>
 				<div class="sexAnswerFurryBox" id="sexAnswer1"></div>
 				<div class="sexAnswerFurryBox" id="sexAnswer0"></div>
-				<div class="sexAnswer">No.<br><span style="font-size: 16px;"><span class="furrydata">sex: no</span> of surveyed furries</span></div>
-				<div class="sexAnswer">No, but it <span style="font-weight: bold">can</span> be.<br><span style="font-size: 16px;"><span class="furrydata">sex: can be</span> of surveyed furries</span></div>
-				<div class="sexAnswer">Yes.<br><span style="font-size: 16px;"><span class="furrydata">sex: yes</span> of surveyed furries</span></div>
+				<div class="sexAnswer">Hayır.<br><span style="font-size: 16px;">Ankete katılan furrylerin <span class="furrydata">statsex: no</span>'ine göre</span></div>
+				<div class="sexAnswer">Hayır, ama <span style="font-weight: bold">olabilir</span> de.<br><span style="font-size: 16px;">Ankete katılan furrylerin <span class="furrydata">statsex: can be</span>'sine göre</span></div>
+				<div class="sexAnswer">Evet.<br><span style="font-size: 16px;">Ankete katılan furrylerin <span class="furrydata">statsex: yes</span>'üne göre</span></div>
 				<div class="littleFurryContainer" id="littleFurry_sex"></div>
 				<div class="colorBlock blue">
 					<img src="darkimg/rainbow_divider.png">
-					<p>Sex is often a point of controversy and disagreement, for furries. Generally speaking, though, the furry community has a little bit more to do with sex than most furries like to admit, but <span style="font-weight: bold">much less</span> than outsiders often believe.</p>
+					<p>Cinsellik furryler arasında genellikle anlaşmazlıların çok yaşandığı konulardan biridir. Genel olarak konuşmak gerekirse, furry topluğu cinsel şeylerle ilgisi çoğu furry onaylamasa bile biraz daha fazladır, ama furry olmayan diğer kişilerin düşündüğünden <span style="font-weight: bold">dahada azdır</span>.</p>
 					<div style="display: block; height: 15px;"></div>
 					<img src="darkimg/rainbow_divider.png">
 				</div>
-				<p>Most people enjoy sex. And because people are creative and experimental, they will occasionally try to mix up sex with their other hobbies.</p>
-				<p>If you were to round up a bunch of non-furry people, and they were completely honest with you, you might hear things like:</p>
+				<p>Çoğu kişi cinsel ilişkilerden zevk alır. Ve insanların hayal dünyası geniş ve farklı şeyler denemeyi sevdiklerinden, cinsel ilişkilerini kendi hobileri ile birlikte deneyeceklerdir.</p>
+				<p>Eğer furry olmayan insanların arasında olsaydınız, ve sizinle tamamen dürüst olsaydılar, muhtemelen böyle şeyler duyabiliyor olablilirdiniz:</p>
 				<img src="darkimg/sex_strip.png">
-				<p>Furries are sometimes the same way. It's not that the furry community is <span style="font-style: italic">about</span> sex, but we do sometimes drag sex into it.</p>
+				<p>Furrylerde buna benzer bir şekildedir. Furry topluluğu tamamen <span style="font-style: italic">cinsellik</span> ile alakalı değildir, ama bazen içine de girebilir.</p>
 				<div class="colorBlock blue">
 					<img src="darkimg/rainbow_divider.png">
-					<p>But there's a little bit more to it than just that.</p>
-					<p>There are a few characteristics of the furry community that all come together to make furries just a little bit more sex-oriented than the general population:</p>
+					<p>Ama bundan biraz daha fazlası da var.</p>
+					<p>Furry topluluğunun, furryleri genel popülasyondan biraz daha cinsel odaklı yapmak için bir araya gelen birkaç özelliği vardır:</p>
 					<ul class="sexReasons">
 						<li>
-							<h4>Furries aren't mainstream, so the community attracts explorers and outcasts.</h4>
-							<p>The furry community is still sort of a "hidden" culture, and because of that, most furries are the type of people who are different, adventurous, and exploratory enough to find it, in the first place.</p>
-							<p>Oftentimes, people who are adventurous enough to try out the furry community are also very adventurous and exploratory when it comes to sex.</p>
+							<h4>Furryler ana akımlardan biri değildir, bu yüzden furry topluluğu meraklı diğer kişilerin ilgisini çeker.</h4>
+							<p>Furry topluluğu hala bir çeşit "gizli" bir kültürdür, ve bu yüzden de, çoğu furry diğer insanlardan farklı, maceracı ve meraklı kişiler olduğundan furrydirler.</p>
+							<p>Genellikle, furry fandomunda olmayı deneyecek kadar meraklı olan kişiler, cinsel konularda da meraklıdır.</p>
 						</li>
 						<li>
-							<h4>Furries are often open-minded about tricky subjects.</h4>
-							<p>Like any group of misfits, the furry community is very slow to judge people for being open and honest. Everyone in the furry community is there because they enjoy something weird, and that same open-mindedness and acceptance is shown to people who start opening up about sex.</p>
+							<h4>Furryler çoğu zaman hassas konular hakkında açık fikirlidir.</h4>
+							<p>Furry topluluğu, çok açık fikirli ve dürüst olan kişileri eleştirmekte bayağı yavaştır. Furry topluluğunda bulunan tüm kişilerin ortak sebebi herkesin farklı garip şeyleri benimsemiş olmasıdır, ve birilerinin cinsel bir konu hakkında konuşmaya başlamasında da açık fikirlilik ve kabul görüşlülük devam eder.</p>
 						</li>
 						<li>
-							<h4>Human creativity often results in porn, and furries are usually creative.</h4>
-							<p>Give a caveman a log and a knife, and he will eventually carve a fertility idol. Give a Greek artist paint, and she will eventually paint Aphrodite. Give an Indian sculptor stone, and he will eventually carve the Khajuraho Monuments.</p>
-							<p>The furry community is a very creative community - it has a very high concentration of artists, writers, and animators. Even furries who are not artists themselves are usually part of the community because they enjoy something that other artists make: art, books, movies, TV shows, or video games.</p>
-							<p>Creative minds like to explore all aspects of humanity: adventure, drama, comedy, and sex - often through pornographic art.</p>
+							<h4>İnsanların hayal gücü genellikle cinsel şeylerlerle sonuçlanabilir, ve çoğunlukla furrylerin de hayal güçleri geniştir.</h4>
+							<p>Bir mağra adamına kütük ve bıçak verin, kütüğe bir kadın kazıyacaktır. Yunan bir çizere boya verin, kağıda Aphrodite'yi çizecektir. Bir hintliye heykeltıraş için aletleri verin, Khajuraho'daki Anıtlar Grubunu inşa etsin.</p>
+							<p>Furry topluluğu hayal gücü çok geniş olan topluluklar arasındadır - çok fazla çizer, yazar ve animatöre sahiptir. Çizer olmayan furryler bile toplluğun bir parçasıdır çünkü çizerlerin yaptığı eserleri beğenirler. Resim, kitap, film, TV dizileri ya da video oyunları gibi.</p>
+							<p>Hayal gücü geniş olan zihinler, insanlığın macera, drama, komedi, ve cinsel şeyler gibi her açısını -genellikle pornografik çizimler ile- keşfetmeye meraklıdır.</p>
 						</li>
 						<li>
-							<h4>Adolescent males are a large part of the furry demographic.</h4>
-							<p>Many furries come from environments where sex is taboo, and stumble across the furry community just as they are beginning to explore their sexuality.</p>
-							<p>When they discover an environment where their exploration of sexuality is not only <span style="font-style: italic">allowed</span>, but <span style="font-style: italic">encouraged and reciprocated</span>, it tends to result in an explosive surge of interest.</p>
+							<h4>Ergen erkekler, furry demografisinin büyük bir bölümünü oluşturur.</h4>
+							<p>Çoğu furry cinsel şeylerin konuşulmasının yasak olduğu yerlerden gelir, ve tamda kendi cinsel yönlerini keşfederken furry topluluğuna rastlarlar.</p>
+							<p>Cinsel şeylerle ilgili fikirlerinin konuşulmasına <span style="font-style: italic">izin verildiğini</span> öğrendiklerinde, bu konulara ilgileri çok fazla artış gösterir.</p>
 						</li>
 					</ul>
-					<p>When all of these factors combine, you end up with a community that may not be <span style="font-style: italic">about</span> sex, but is very <span style="font-style: italic">sex-positive</span>.</p>
-					<p>Most furries view sex as something healthy, fun, and natural, and have very little shame drawing it, looking at it, and talking about it openly.</p>
+					<p>Tüm bu etkenleri topladığınızda, cinsel şeyler ile <span style="font-style: italic">ilgili</span> olmayan, ama cinsel konulara bayağı <span style="font-style: italic">pozitif</span> yaklaşan bir topluluk elde ediyorsunuz.</p>
+					<p>Çoğu furry cinsel şeyleri sağlıklı, eğlenceli ve doğan birşey olarak gördüğünden pek de çizmekte, bakmakta ve hakkında açıkça konuşmakta sorun görmüyor.</p>
 					<div style="display: block; height: 15px;"></div>
 					<img src="darkimg/rainbow_divider.png">
 				</div>
-				<p>There are many misconceptions about sex in the furry community.</p>
-				<p>When people try to guess what furry sexuality is about, they often imagine one of three things: bizarre fursuit parties, leashes and collars, or zoophilia.</p>
-				<p>In reality, only about <span class="furrydata">like: murrsuits</span> of surveyed furries like the idea of having sex in fursuits, <span class="furrydata">like: puppy play</span> are interested in "pet play", and only <span class="furrydata">like: zoo</span> of surveyed furries have <span style="font-style: italic">any</span> attraction to animals.</p>
+				<p>Furry topluluğunda cinsel şeyler hakkında çok fazla yanlış bilinen tanımlar vardır.</p>
+				<p>İnsanlar furrylerin cinsel olarak ne yaptığını tahmin etmeye çalıştığında akıllarına: tuhaf fursuit partileri, tasma ve kayış, ve zoofililik akılla gelir.</p>
+				<p>Ama gerçekte, sadece furrylerin <span class="furrydata">like: murrsuits</span>'sı fursuit içinde cinsel ilişkiye sevdiğini, sadece <span class="furrydata">like: puppy play</span>'u hayvan gibi davranmayı sevdiğini, ve yine sadece furrylerin <span class="furrydata">like: zoo</span>'sı hayvanların <span style="font-style: italic">herhangi</span> bir yönünden cinsel olarak ilgi çekici bulduğunu belirtti.</p>
 				<div class="colorBlock blue">
 					<img src="darkimg/rainbow_divider.png">
-					<p>The thing that <span style="font-style: italic">most</span> furries are interested in is pornographic artwork (<span class="furrydata">like: art</span>) or literature (<span class="furrydata">like: literature</span>) featuring anthropomorphic characters.</p>
-					<p>Occasionally, these characters resemble cartoon characters from popular movies or TV shows. Other times, they depict characters from video games or fantasy worlds. Most of the time, however, the characters seen in furry pornography are original creations - characters made by furries.</p>
+					<p>Mesele şu ki <span style="font-style: italic">çoğu</span> furry, pornografik çizimleri (<span class="furrydata">like: art</span>), veya kitaplarda (<span class="furrydata">like: literature</span>) yer verilen anthropomorfik karakterlerden hoşlanıyor.</p>
+					<p>Bazen, bu karakterer popüler çizgi film karakterlerine ya da TV dizilerindekilere benzer. Diğer zamanlarda ise, karakterler video oynları veya fantazi oyunlarından gösterilir. Çoğunlukla, furry pornografisinde gözüken karakterler ise furryler tarafından oluşturulmuş kendilerine özgü karakterlerdir.</p>
 					<div style="display: block; height: 15px;"></div>
 					<img src="darkimg/rainbow_divider.png">
 				</div>
-				<p>Like the furry community as a whole, furry pornography is something people enjoy for many different reasons:</p>
+				<p>Tamamen furry topluluğunu düşünürsek, insanlar furry pornografisini çok fazla farklı sebeplerden dolayı severler:</p>
 				<div class="barGraphBlue">
 					<div class="barGraphLine">
-						<div class="barGraphLabel">It often portrays a progressive, sex-positive philosophy</div>
+						<div class="barGraphLabel">Genellikle gelişen, pozitif yönlü cinsel felsefeye sahip olduğundan</div>
 						<div class="barGraphBarBlue unloadedBarGraphBar">adult content: sex positive</div>
 					</div>
 					<div class="barGraphLine">
-						<div class="barGraphLabel">It features characters that are more exotic and interesting than humans</div>
+						<div class="barGraphLabel">İnsanlardan daha egzotik ve ilgi çekici karakterlere yer verdiğinden</div>
 						<div class="barGraphBarBlue unloadedBarGraphBar">adult content: exotic</div>
 					</div>
 					<div class="barGraphLine">
-						<div class="barGraphLabel">It feels more expressive, genuine, and "real" than commercial porn</div>
+						<div class="barGraphLabel">Ticaret amaçlı pornodan daha etkileyici, gerçekçi hissettirdiğinden</div>
 						<div class="barGraphBarBlue unloadedBarGraphBar">adult content: expressive</div>
 					</div>
 					<div class="barGraphLine">
-						<div class="barGraphLabel">It helps them explore fetishes that are impossible or dangerous in real life</div>
+						<div class="barGraphLabel">Gerçek hayatta yapmanın imkansız ya da tehlikeli olabilecek fetişleri keşfetmelerine yardımcı olduğundan</div>
 						<div class="barGraphBarBlue unloadedBarGraphBar">adult content: impossibility</div>
 					</div>
 					<div class="barGraphLine">
-						<div class="barGraphLabel">It shares common ground with other, non-furry fetishes, like pet play or zoophilia</div>
+						<div class="barGraphLabel">Furry olmayan şeylerle aynı zemini paylaştığından: hayvan gibi davranma ya da zoofili içerdiğinden</div>
 						<div class="barGraphBarBlue unloadedBarGraphBar">adult content: fursuits</div>
 					</div>
 				</div>
-				<p>Among furries who enjoy furry pornography, <span class="furrydata">furry porn: enjoy or okay</span> say they don't <span style="font-style: italic">need</span> furry pornography: it's just something they enjoy in addition to normal pornography.</p>
-				<p>Beyond pornographic art, there are a few other adult outlets that furries sometimes enjoy:</p>
+				<p>Furry pornografisine bakmayı seven furryler, <span class="furrydata">furry porn: enjoy or okay</span> furry pornografisine bakma <span style="font-style: italic">ihtiyacı</span> olmadıklarını söylediler, sadece normal pornografiye ek olarak sevdikleri başka birşey olduğunu belirttiler.</p>
+				<p>Pornografik çizimler dışında, yetişkin furrylerin sevdikleri başka şeyler:</p>
+				<div style="display: block; height: 15px;"></div>
 				<div class="sexAnswerFurryBox" id="sexAnswer3"></div>
 				<div class="sexAnswerFurryBox" id="sexAnswer4"></div>
 				<div class="sexAnswerFurryBox" id="sexAnswer5"></div>
-				<div class="sexAnswer">
-					Erotic Roleplay
-					<br><span style="font-size: 16px;"><span class="furrydata">like: erp</span> of surveyed furries</span>
+				<div class="sexAnswer2">
+					ㅤ  ㅤㅤ ㅤ ㅤErotik Rol
+					ㅤ ㅤ ㅤㅤㅤㅤㅤㅤYapmak
+					<br><span style="font-size: 16px;"><span class="furrydata">like: erp</span> Ankete katılan furrylerin</span>
 				</div>
-				<div class="sexAnswer">
-					Furry Sex Toys
+				<div class="sexAnswer2">
+					Cinsel Furry Oyuncakları
 					<br><span style="font-size: 16px;"><span class="furrydata">like: sex toys</span> of surveyed furries</span>
 				</div>
-				<div class="sexAnswer">
-					Fursuit Sex
+				<div class="sexAnswer2">
+					Fursuit ile Cinsel Aktiviteler
 					<br><span style="font-size: 16px;"><span class="furrydata">like: murrsuits</span> of surveyed furries</span>
 				</div>
 				<div class="littleFurryContainer" id="littleFurry_sex"></div>
 				<div class="colorBlock blue">
-					<img src="img/rainbow_divider.png">
-					<p>Many people enjoy sex without letting it define who they are. In the same way, sex is not a defining characteristic of the furry community: it's just something that many furries enjoy in the background.</p>
-					<img src="img/rainbow_divider.png">
+					<img src="darkimg/rainbow_divider.png">
+					<p>Pek çok insan, kim olduklarını tanımlamasına izin vermeden cinsel aktivitelerden zevk alır. Aynı şekilde cinsel şeyler, furry topluluğunun tanımlayıcı bir özelliği değildir: bu sadece birçok furrynin arka planda keyif aldığı bir şeydir.</p>
+					<img src="darkimg/rainbow_divider.png">
 				</div>
 			</div>
 			
 			<div class="content">
-				<h1>FAQ</h1>
-				<div class="anchorContainer"><a class="anchor" id="faq">.</a></div>
+				<h1>Sıkça Sorulan Sorular</h1>
+				<div class="anchorContainer" style="display: block; height: 15px;"><a class="anchor" id="sss">.</a></div>
 
 			<div class="faqColumn0">
+
 				<div class="section">
-					<div class="faqText"><h2>What's up with the costumes?</h2>
-					<p>Fursuits are just one small part of the furry community, and only about <span class="furrydata unloadedData">activity: owned fursuit</span> of furries own one.</p>
-					<p>Furries who fursuit do it for <a href="#fursuit">a variety of reasons</a>, but most of those reasons are just about letting loose, having fun, and making people happy.</p>
+					<div class="faqText"><h2>Furryler hayvan olduklarını düşünüyorlar mı?</h2>
+					<p>Ankete katılan furrylerin sadece <span class="furrydata unloadedData">otherkin</span>'u <a target="_blank" href="https://en.wikipedia.org/wiki/Therianthropy#Psychiatric_aspects">therian</a> veya <a target="_blank" href="https://en.wikipedia.org/wiki/Otherkin">otherkin</a>'dir: insan vücudunda "hapsolmuş" olduğunu düşünen kişilerdir.</p>
 				</div></div>
+
 				<div class="section">
-					<div class="faqText"><h2>Why does it seem like many furries are gay?</h2>
-					<p>The furry community is one that prides itself on being open, inviting, and accepting.</p>
-					<p>Because of this, many LGBT people who feel out of place in the mainstream world see the furry community as a safe place - somewhere that allows them to be who they really are.</p>
-					<p>In many instances, this feeling of security and acceptance causes people to form a strong, positive association between the furry community and their sexuality.</p>
+					<div class="faqText"><h2>Neden çoğu furryin gay olduğu düşünülüyor?</h2>
+					<p>Furry topluluğu herkese açık, arkadaş canlısı ve herkesi olduğu gibi kabul eden topluluklardandır.</p>
+					<p>Bu sebepten dolayı, çoğu LGBT üyesi kişiler ana akım medyasından dışlanmış hissedip kendisini olduğu gibi kabul eden, furry topluluğu gibi yerlerde kendilerini daha huzurlu hissediyor.</p>
+					<p>Çoğu örneklerde, bu güven ve kabul edişlilik insanların güçlü ve pozitif yönde furry topluluğu ve cinsel yönelimi ile bağ kuruyor.</p>
 				</div></div>
+
 				<div class="section">
-					<div class="faqText"><h2>Are furries zoophiles?</h2>
-					<p>No. Zoophilia is completely unrelated to the furry community.</p>
-					<p>One of the core characteristics of the furry community - including the adult portion of the community - is an appreciation for animals who are <span style="font-weight: bold">anthropomorphized</span>, which means they can think, speak, consent, and <span style="font-style: italic">look</span> like humans.</p>
-					<p>Real animals are not capable of thought, speech, or consent on the same level as humans. More importantly, real animals do not look human in any way, so they are not sexually attractive to most furries.</p>
+					<div class="faqText"><h2>Furryler zoofili midir?</h2>
+					<p>Hayır. Zoofililik furry topluluğu ile kesinlikle alakalı değildir.</p>
+					<p>Furry topluluğundaki karakterlerin ana özellikleri -topluluğun yetişkin kısmınıda kapsıyor- <span style="font-weight: bold">anthropomorfik</span> olmasıdır, yani konuşabilmesi, düşünebilmesi ve insan gibi <span style="font-style: italic">gözükmesi</span> gerekir.</p>
+					<p>Gerçek hayvanlar insanlar gibi düşünemez, konuşamaz. Daha önemli olan ise gerçek hayvanlar insanlara benzemezler, yani çoğu furry için bu cinsel olarak ilgi çekici değildir.</p>
 					</div></div>
+					
 				<div class="section">
-					<div class="faqText"><h2>I know someone who likes animated movies / animal races in video games. Are they a furry?</h2>
-					<p>Probably not, but maybe!</p>
-					<p>In the same way that it's possible to enjoy Star Trek without being a "trekkie," there are a lot of people who enjoy animated movies and animal races, but don't consider themselves furries.</p>
+					<div class="faqText"><h2>Animasyon filmlerindeki / video oyunlarındaki hayvan türlerini seven tanıdığım kişiler var. Onlarda furry mi ?</h2>
+					<p>Muhtemelen hayır, ama belki!</p>
+					<p>"Trekkie" olmadan Star Trek izlemeyi seven insanlar varsa, furry olmayıp filmlerde/oyunlarda hayvan türlerini seven kişilerde vardır.</p>
 					</div></div>
-			</div>
+			</div> <!--this div makes 2 faq's seperated so leave him alone pls-->
 
 			<div class="faqColumn1">
+
 				<div class="section">
-					<div class="faqText"><h2>Do furries think that they're animals?</h2>
-					<p>Only about <span class="furrydata unloadedData">otherkin</span> of furries are <a target="_blank" href="https://en.wikipedia.org/wiki/Therianthropy#Psychiatric_aspects">therians</a> or <a target="_blank" href="https://en.wikipedia.org/wiki/Otherkin">otherkin</a>: people who believe they are an animal "trapped" in a human body.</p>
+					<div class="faqText"><h2>Kostümler neyin nesi?</h2>
+					<p>Fursuitler furry topluluğunun sadece küçük bir kısmıdır, ve furrylerin sadece <span class="furrydata unloadedData">activity: owned fursuit</span>'ü bir fursuite sahiptir.</p>
+					<p>Furryler bazı <a href="#fursuit">sebeplerden dolayı</a> fursuit giyerler, ama çoğu furryin fursuit giyme sebepleri arasında ise eğlenmek ve insanları mutlu etmektir.</p>
 				</div></div>
+
 				<div class="section">
-					<div class="faqText"><h2>Who made this site, and what's your angle?</h2>
-					<p>Howdy! I'm a furry from the Midwest who makes furry content for a living.</p>
-					<p>I made this site because when you google "what are furries?", the top results are a boring wikipedia page and a bunch of sensationalist news articles. I wanted to change that.</p>
-					<p>For most furries, being a furry is a private, silly thing, not a big part of their identity. But some furries feel the need to "come out" as furries, and others are "outed" accidentally. I wanted to make a resource that those people could use to try to explain the whole "furry" thing to others.</p>
+					<div class="faqText"><h2>Bu siteyi kim yaptı, ve senin görüşün nedir?</h2>
+					<p>Merhabalar! Ben Amerikanın orta batısında yaşayan ve geçinmek için furry içerikleri üreten bi furryim.</p>
+					<p>Bu siteyi yaptım çünkü internette "furry nedir" diye aratınca en üst kısımlarda karşımıza gelen sıkıcı vikipedi sayfaları ve haber başlıklarından dolayı böyle bie site yapma kararı aldım.</p>
+					<p>Çoğu furry için, furry olmak gizli, şapşik birşeydir, kendi kişiliklerinin büyük bir kısmını oluşturmaz. Ama bazı furryler kendilerini furry olarak açığa çıkarma ihtiyacı olduğunu hissederler. Ben de insanların furryin ne olduğunu diğerlerine açıklamak için kullanabileceği bir kaynak hazırlamak istedim.</p>
+					<p>Not: Bu kısım <a href="#footer">orijinal yapımcı</a> hakkındadır.</p>
 				</div></div>
+				
 				<div class="section">
-					<div class="faqText"><h2>How was this data collected?</h2>
-					<p>The surveys used to build this website were posted on several online furry communities, by fairly prominent members of those communities. The surveys can also be taken by anyone who visits this page.</p>
-					<p>Most of the survey responses come from <a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a>, a furry community with about 34,000 members.</p>
-					<p>The remaining survey responses were collected on furry art websites like <a target="_blank" href="http://www.furaffinity.net/">FurAffinity</a>. Because these websites often allow adult art, the survey results may be slightly skewed in favor of sex-positive answers.</p>
-					<p>It's important to remember that, like any other survey, the numbers shown on this website only represent a small portion of the furry community. Furries with strong opinions and a high degree of activity within the community are more likely to take voluntary surveys.</p>
-				</div></div></div>
+					<div class="faqText"><h2>Bu veriler nasıl toplanıyor?</h2>
+					<p>Bu sitede kullanılabilmesi için çoğu çevrim içi furry topluluklarında paylaşıldı. Ayrıca bu siteyi ziyaret eden kişiler anketlere buradan da katılabilirler.</p>
+					<p>Anketlere çoğunlukla <a target="_blank" href="http://www.reddit.com/r/furry/">/r/furry/</a> topluluğu tarafından katılım oldu, reddit üzerinde 34,000~ üyesi olan bir furry topluluğudur.</p>
+					<p>Anketlere başka yerlerden katılım ise <a target="_blank" href="http://www.furaffinity.net/">FurAffinity</a> gibi furry sanat websitelerinden oldu. Bu sitelerde yetişkin içeriklere izin verildiğinden, anketlerin yetişkin sorularına verilen cevaplar biraz çarpıtılmış olabilir.</p>
+					<p>Önemli olarak, diğer tüm anketlerde olduğu gibi, burda gösterilen sayılar sadece furry topluluğunun küçük bir kısmını kapsıyor. Güçlü fikirlere sahip olan ve çoğunlukla furry topluluğunda aktif olan furrylerin gönüllü anketlere katılma olasılığı yüksektir.</p>
+				</div></div></div> <!--extra /div for another smol block uwo-->
 				<div style="display: block; height: 6px;"></div>
 			</div></div>
-			
-			<div class="anchorContainer"><a class="anchor" id="surveys">.</a></div>
+
+			<div class="anchorContainer" style="display: block; height: 1px;"><a class="anchor" id="surveys">.</a></div>
 			<div class="content">
-				<h1>Surveys</h1>
+				<h1>Anketler</h1>
 				<div style="display: block; height: 15px;"></div>
-				<p>Much of the data shown on this page comes directly from furries we've surveyed. If you're a furry, and you'd like to help explain furries to the world, you can make your voice heard by taking the surveys below!</p>
+				<p>Bu sayfada gösterilen çoğu veri direkt olarak bu anketlerden geliyor. Eğer sizde furryseniz ve dünyaya furryin ne olduğunu açıklamak istiyorsanız sesinizi bu ankete katılarak duyurabilirsiniz!</p>
+
 				<div class="surveybox0">
 					<a class="noUnderline" target="_blank" href="https://goo.gl/forms/t7XkFHbZVAEWga6P2">
-						<div class="surveyButton">Survey: What are Furries?</div></a>
+						<div class="surveyButton">Sizce furry nedir?</div></a>
 					<a class="noUnderline" target="_blank" href="https://goo.gl/forms/FSXzhKvmwmloaMxj2">
-						<div class="surveyButton">Survey: Why do you go to furry conventions?</div></a>
+						<div class="surveyButton">Furry fuarlarına neden katılırsınız?</div></a>
 					<a class="noUnderline" target="_blank" href="https://goo.gl/forms/MY9PUq3nBYeZ1MMK2">
-						<div class="surveyButton">Survey: Why do you fursuit?</div></div></a>
+						<div class="surveyButton">Fursuit neden giyersiniz?</div></div></a>
+
 				<div class="surveybox1">
 					<a class="noUnderline" target="_blank" href="https://goo.gl/forms/EqH8tUSx9f4Qp8XB3">
-						<div class="surveyButton">Survey: What does your character mean to you?</div></a>
+						<div class="surveyButton">Karakteriniz size ne anlam ifade eder?</div></a>
 					<a class="noUnderline" target="_blank" href="https://goo.gl/forms/Cwc04ExixHrzwF1i1">
-						<div class="surveyButton">Survey: How do you feel about furry pornography?</div></a>
+						<div class="surveyButton">Furry pornografisi hakkında ne düşünürsünüz?</div></a>
 					<a class="noUnderline" target="_blank" href="https://goo.gl/forms/XN8Q7SR8DOsrxPlN2">
-						<div class="surveyButton">Survey: What do you enjoy about adult furry content?</div></a>
+						<div class="surveyButton">Yetişkin furry içeriklerinden neden hoşlanırsınız?</div></a>
 					</div></div>
-			<div class="legalFooter">
+
+			<div class="legalFooter"><a class="anchor" id="footer">.</a>
 				<a style="text-decoration: none" href="https://twitter.com/fekfekfekfek">Made by: <img style="vertical-align:middle" class="imgf" src="footers/fek.png"></img></a>
 				<a style="text-decoration: none" href="https://www.furaffinity.net/user/draite">Art by: <img style="vertical-align:middle" class="imgf" src="footers/draite.png"></img></a>
 				<a style="text-decoration: none" href="https://www.furaffinity.net/user/kekstogo/">Redesign/Translation by: <img style="vertical-align:middle" class="imgf" src="footers/msr.png"></img></a>
 				<a style="text-decoration: none" href="https://www.furaffinity.net/user/darkbloodking">Special Thanks to: <img style="vertical-align:middle" class="imgf" src="footers/dark.png"></img></a>
-				</div>
+				<a style="text-decoration: none" href="https://twitter.com/MarbleStarry">Check up: <img style="vertical-align:middle" class="imgf" src="footers/pumpkin.png"></img></a>
+				<a style="text-decoration: none" href="https://github.com/FurryNedir/FurryNedir.github.io">Source code: <img style="vertical-align:middle" class="imgf" src="footers/githubdark.png"></img></a>
+			</div>
 		</div>
 	</body>
 </html>
